@@ -1,9 +1,29 @@
 # yt-dlp dependency provenance
 
 AxonTube uses yt-dlp for user-initiated caption metadata and subtitle retrieval.
-It runs as a separate command-line process. The executable and large source
+It runs as a separate command-line process and also serves explicitly selected
+Save Video actions. The executable and large source
 archives are excluded from the source repository; notices, verification data,
 build metadata, and source-download manifests are retained here.
+
+## Public release profile and optional standalone profile
+
+Public arm64 packages use the official **Unix zipimport** executable from this
+same yt-dlp version, with a private Python runtime, locally built QuickJS, and
+certificate roots. Its SHA-256 is
+`e5d57466682cfa9d61e9cf7c8a4f09b00f4a62af37d3bbdc4bcffdf63615feac`.
+It contains yt-dlp and EJS under the Unlicense, astring under MIT, and meriyah
+under ISC. The runtime, QuickJS, and certifi retain their separate component
+terms. Exact inputs, source access, preparation, and file verification are
+documented in the [public release profile](../release-helper/README.md) and
+its [notices](../release-helper/NOTICE.md).
+
+The sections below describe the **optional local PyInstaller standalone
+profile**, retained for the existing `prepare-ytdlp.sh` workflow. Its GPL
+source-completeness limitation remains specific to that combined executable.
+The public binary profile does not contain that executable. Original notices
+in this directory are retained byte for byte; they must not be rewritten as
+though they were an exact inventory of the Unix profile.
 
 ## Pinned upstream artifact
 

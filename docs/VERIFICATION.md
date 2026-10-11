@@ -1,5 +1,39 @@
 # Verification record
 
+## 0.5.3 macOS release packaging — 2026-10-12
+
+The first public binary preview packages the reviewed 0.5.3 application for
+Apple Silicon. Swift application source, tests and demo assets are unchanged
+from the source preview. The release checkout was rebuilt and its 105 core
+checks, 138 model assertions, 29 caption assertions and 60 video-save
+assertions passed again. The 317 native-interface assertions below are prior
+application evidence, not a new full interface test run.
+
+| Release check | Result |
+| --- | --- |
+| Final ZIP | CRC and archive metadata passed; extracted into a path containing spaces; app signature, helper manifest and helper execution passed |
+| Actual app launch | Final extracted app opened in a separate instance; the English main window with English / Traditional Chinese subtitle defaults was visually reviewed; only the test instance was closed |
+| Final DMG | Image checksum passed; read-only mounted; the copied app matched the staged app by file hashes, modes and links and passed helper execution and signature checks |
+| Frozen helper | All 596 file/link records verified; four arm64 native binaries checked; execution did not change the payload |
+| Runtime | Bundled CPython 3.13.16, yt-dlp 2026.06.09 and QuickJS 2026-06-04; isolated Python ignores external Python paths; 119 bundled CA roots and HTTPS certificate/hostname validation passed |
+| Dependency materials | Matching source/license materials included; all 39 material records matched the manifest; archive owner metadata is neutral |
+| Privacy | Reviewed source and final bundles contain no identified user names, personal email addresses, local machine paths, credentials or private infrastructure details; upstream notices and source metadata remain intact |
+| Documentation | Both root READMEs and 24 language guides rendered locally; 910 local document/image references resolved; release, package, checksum and installation links added |
+| Checksums | SHA-256 checksums passed for the DMG, ZIP and dependency-materials archive |
+
+The helper payload is stored under application resources. An internal directory
+link preserves the launcher's relative paths without modifying the pinned
+runtime bytes. The app is ad-hoc signed and **not Developer ID signed or Apple
+notarized**. Only Apple Silicon on macOS 26.5.2 was tested; macOS 14 remains the
+deployment target, and macOS 27 / Intel are unverified.
+
+A fresh request for the official YouTube iframe demonstration returned no
+caption languages or downloadable formats. A single diagnostic request exposed
+the sign-in / bot-verification error. An exit code of zero from a metadata
+request is therefore **not** treated as successful online retrieval. No cookies,
+account credentials or media were imported. This service limitation remains
+visible in the README and release notes.
+
 ## Initial public source preview — 2026-10-11
 
 The reviewed AxonTube tree was exported into a separate publication checkout

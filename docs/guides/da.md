@@ -6,7 +6,9 @@
 
 **Lær verdens sprog hurtigere med AI.**
 
-Version 0.5.3 · Forhåndsversion som kildekode · Byg fra kildekode
+Version 0.5.3 · Forhåndsversion til macOS · Apple Silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Gør YouTube til dit eget sprogklasseværelse. Lær med videoer, du elsker, ved hjælp af YouTubes undertekster og automatiske oversættelser: læs to sprog side om side, afspil hver sætning igen, og gem det materiale, der betyder noget for dig.
 

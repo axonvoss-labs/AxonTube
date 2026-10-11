@@ -6,7 +6,9 @@
 
 **Leer de talen van de wereld sneller met AI.**
 
-Versie 0.5.3 · Voorlopige versie als broncode · Bouw vanuit broncode
+Versie 0.5.3 · macOS-preview · Apple silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Maak van YouTube je persoonlijke taalklas. Leer met YouTube-ondertitels en automatische vertalingen van video's die je graag kijkt: lees twee talen naast elkaar, speel elke zin opnieuw af en bewaar het materiaal dat voor jou telt.
 

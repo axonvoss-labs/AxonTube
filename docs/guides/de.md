@@ -6,7 +6,9 @@
 
 **Lerne die Sprachen der Welt schneller mit KI.**
 
-Version 0.5.3 · Quellcode-Vorschau · Aus dem Quellcode kompilieren
+Version 0.5.3 · macOS-Vorschau · Apple Silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Mach YouTube zu deinem persönlichen Sprachkurs. Lerne mit YouTube-Untertiteln und automatischen Übersetzungen aus deinen Lieblingsvideos: Lies zwei Sprachen nebeneinander, spiele jeden Satz erneut ab und behalte das Lernmaterial, das dir wichtig ist.
 

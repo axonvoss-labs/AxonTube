@@ -6,7 +6,9 @@
 
 **Ucz się języków świata szybciej dzięki AI.**
 
-Wersja 0.5.3 · Wersja poglądowa kodu źródłowego · Kompilacja ze źródeł
+Wersja 0.5.3 · Wersja testowa dla macOS · Apple silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Zamień YouTube w swoją osobistą klasę językową. Korzystaj z napisów i automatycznych tłumaczeń YouTube, by uczyć się z ulubionych filmów: czytaj dwa języki obok siebie, odtwarzaj każde zdanie ponownie i zachowuj najważniejsze materiały.
 

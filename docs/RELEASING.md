@@ -55,7 +55,45 @@ state and finish synchronizing that destination before declaring completion.
 
 ## Application archives
 
-Public application archives require their own distribution review. A successful
-source publication does not resolve signing, notarization, wider Mac testing,
-or the bundled helper's corresponding-source requirements. See
-[source and dependency access](SOURCE-ACCESS.md).
+Public application archives use the prepared release-helper profile documented
+in [source and dependency access](SOURCE-ACCESS.md). The older standalone helper
+preparation remains available for local review; the release archive script
+rejects that profile. Dependency downloads require an explicit preparation step.
+
+```sh
+python3 scripts/prepare-release-helper.py --download \
+  --cache dist/helper-downloads --output dist/release-helper-arm64
+bash scripts/package.sh --helper-dir dist/release-helper-arm64 \
+  --output-dir dist/app-0.5.3
+bash scripts/package-release.sh --app dist/app-0.5.3/AxonTube.app \
+  --helper-dir dist/release-helper-arm64 --output-dir dist/release-0.5.3
+```
+
+Choose fresh output directories for later builds. The scripts validate the
+helper inventory, create the original icon, strip private build paths, sign
+the application ad hoc, and produce these release assets:
+
+- `AxonTube-0.5.3-macos-arm64.dmg`
+- `AxonTube-0.5.3-macos-arm64.zip`
+- `AxonTube-0.5.3-dependency-materials.tar.gz`
+- `SHA256SUMS.txt`
+
+Before publication, verify the extracted ZIP and mounted DMG, launch the
+extracted app, run its bundled helper from a path containing spaces, and check
+that its resources and signatures remain valid afterward. Inspect archives for
+private paths, user media, credentials, build caches, and identifying metadata.
+Keep required dependency notices. Record live YouTube results separately from
+offline fixture tests.
+
+Create the release tag from the reviewed commit in the dedicated publication
+checkout and push only that tag to both remotes. Create a draft GitHub Release
+with the four verified assets, use a prerelease label for this preview, and
+expand relative links in the bilingual release notes before publishing them.
+Do not reuse an existing tag or replace published assets during a routine
+update. After publication, download the public assets again, verify their
+checksums, and compare both remote tag targets with the publication commit.
+
+The preview is not Developer ID signed or notarized. A successful build does
+not establish compatibility with untested Macs or resolve restrictions imposed
+by online services. Keep these limits visible in the release notes and
+[installation instructions](INSTALL.md).

@@ -11,7 +11,7 @@
   <img src="docs/assets/badges/macos.svg" alt="Platform: macOS" width="104" height="20">
   <img src="docs/assets/badges/interface-languages.svg" alt="24 interface languages" width="153" height="20">
   <a href="LICENSE"><img src="docs/assets/badges/license-mit.svg" alt="License: MIT" width="81" height="20"></a>
-  <img src="docs/assets/badges/preview.svg" alt="Version 0.5.3 — local preview" width="141" height="20">
+  <img src="docs/assets/badges/preview.svg" alt="Version 0.5.3 — macOS preview" width="141" height="20">
 </p>
 
 **English** · [简体中文](README.zh-CN.md) · [繁體中文](docs/guides/zh-Hant.md) · [日本語](docs/guides/ja.md) · [한국어](docs/guides/ko.md) · [Español](docs/guides/es.md)
@@ -30,7 +30,11 @@ Use YouTube captions and automatic translations to learn from videos you love: r
 
 **24 interface languages · Multilingual subtitles**
 
-> **0.5.3 · Source preview — build from source.** The latest YouTube download check encountered sign-in / bot verification. Current online retrieval still needs live validation.
+> **0.5.3 · macOS preview for Apple silicon.** The latest YouTube download check encountered sign-in / bot verification. Current online retrieval still needs live validation.
+
+**[Download DMG](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.dmg)** · [Download ZIP](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.zip) · [SHA-256 checksums](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/SHA256SUMS.txt) · [Release notes](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3)
+
+Requires an Apple silicon Mac; macOS 14 is the deployment target. This preview is ad-hoc signed and is not notarized by Apple. Read the [installation instructions](docs/INSTALL.md) before opening it. Source builds remain available below.
 
 ![AxonTube bilingual playback and sentence practice](docs/assets/interface-study.png)
 
@@ -220,8 +224,9 @@ The Swift package has no external package dependencies.
 git clone --branch axontube https://github.com/axonvoss-labs/AxonTube.git
 cd AxonTube
 
-# Explicitly download and verify the pinned YouTube helper.
-bash scripts/prepare-ytdlp.sh
+# Explicitly prepare the pinned, self-contained release helper.
+python3 scripts/prepare-release-helper.py --download \
+  --cache dist/helper-downloads --output dist/release-helper-arm64
 
 swift build -c release
 python3 scripts/check-core.py
@@ -229,13 +234,19 @@ python3 scripts/check-model.py
 python3 scripts/check-captions.py
 python3 scripts/check-video-save.py
 
-xcrun swift scripts/make-icon.swift dist/PlayerIcon.iconset
-iconutil -c icns dist/PlayerIcon.iconset -o dist/PlayerIcon.icns
-bash scripts/package.sh --skip-build
-open "dist/0.5.3/AxonTube.app"
+bash scripts/package.sh --skip-build --helper-dir dist/release-helper-arm64 \
+  --output-dir dist/app-0.5.3
+open "dist/app-0.5.3/AxonTube.app"
+
+# Produce distributable archives and checksums in a new directory.
+bash scripts/package-release.sh --app dist/app-0.5.3/AxonTube.app \
+  --helper-dir dist/release-helper-arm64 --output-dir dist/release-0.5.3
 ```
 
-Packaging does not download dependencies. The local app uses an ad-hoc
+Preparation requires an Apple silicon Mac. Output directories must be new;
+earlier packages are preserved. Packaging generates the app icon, strips
+private build paths, and checks the copied helper manifest. Packaging itself
+does not download dependencies. The preview app uses an ad-hoc
 signature, not Developer ID signing or notarization. A full Xcode installation
 can run `swift test`; the check scripts also support Command Line Tools without
 XCTest and report their results separately.

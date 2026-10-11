@@ -6,7 +6,9 @@
 
 **用 AI，更快掌握世界语言。**
 
-0.5.3 版本 · 源码预览版 · 请从源码构建
+0.5.3 版本 · macOS 预览版 · Apple 芯片
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 把 YouTube 变成你的私人语言课堂。从热爱的视频出发，借助 YouTube 字幕和自动翻译，双语对照、逐句重听，把感兴趣的内容变成可以反复学习的材料。
 

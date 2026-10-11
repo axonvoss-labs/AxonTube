@@ -6,7 +6,9 @@
 
 **Learn the World's Languages Faster with AI.**
 
-Version 0.5.3 · Source preview · Build from source
+Version 0.5.3 · macOS preview · Apple silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Turn YouTube into your personal language classroom. Use YouTube captions and automatic translations to learn from videos you love: read two languages side by side, replay each sentence, and keep the material that matters.
 

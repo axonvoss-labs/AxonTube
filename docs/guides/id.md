@@ -6,7 +6,9 @@
 
 **Pelajari bahasa-bahasa dunia lebih cepat dengan AI.**
 
-Versi 0.5.3 · Pratinjau kode sumber · Kompilasi dari kode sumber
+Versi 0.5.3 · Pratinjau macOS · Apple silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Jadikan YouTube kelas bahasa pribadi Anda. Gunakan takarir dan terjemahan otomatis YouTube untuk belajar dari video favorit Anda: baca dua bahasa berdampingan, putar ulang setiap kalimat, dan simpan materi yang penting bagi Anda.
 

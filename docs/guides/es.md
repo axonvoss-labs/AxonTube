@@ -6,7 +6,9 @@
 
 **Aprende los idiomas del mundo más rápido con IA.**
 
-Versión 0.5.3 · Vista previa del código fuente · Compila desde el código fuente
+Versión 0.5.3 · Vista previa para macOS · Apple silicon
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 Convierte YouTube en tu aula de idiomas personal. Aprende con tus vídeos favoritos gracias a los subtítulos y las traducciones automáticas de YouTube: lee dos idiomas en paralelo, repite cada frase y conserva el material que más te importa.
 

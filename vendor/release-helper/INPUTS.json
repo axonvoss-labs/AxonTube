@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "components": [
+    {"name": "yt-dlp", "version": "2026.06.09", "license": "Unlicense", "artifact": "Official Unix zipimport executable; includes EJS below"},
+    {"name": "yt-dlp-ejs", "version": "0.8.0", "license": "Unlicense", "artifact": "Bundled inside the official yt-dlp executable"},
+    {"name": "astring", "version": "1.9.0", "license": "MIT", "artifact": "Bundled EJS JavaScript"},
+    {"name": "meriyah", "version": "6.1.4", "license": "ISC", "artifact": "Bundled EJS JavaScript"},
+    {"name": "CPython / python-build-standalone", "version": "3.13.16 / 20261009", "license": "Python-2.0 AND CNRI-Python; native component terms in LICENSES/python", "artifact": "arm64 runtime; installers, Tk, tests and development tools omitted"},
+    {"name": "QuickJS", "version": "2026-06-04", "license": "MIT", "artifact": "arm64 qjs built from the pinned source archive"},
+    {"name": "certifi CA bundle", "version": "2026.5.20", "license": "MPL-2.0", "artifact": "Unmodified cacert.pem; matching source provided with dependency materials"}
+  ],
+  "inputs": [
+    {
+      "id": "python-runtime", "kind": "runtime", "filename": "cpython-runtime.tar.gz",
+      "version": "3.13.16+20261009",
+      "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261009/cpython-3.13.16%2B20261009-aarch64-apple-darwin-install_only_stripped.tar.gz",
+      "size": 25257849,
+      "sha256": "11785155d0f70e634178219c20925d8f20be00a3da4684fc4f5019dd15602ef7"
+    },
+    {
+      "id": "python-metadata", "kind": "metadata", "filename": "cpython-full.tar.zst",
+      "version": "3.13.16+20261009",
+      "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261009/cpython-3.13.16%2B20261009-aarch64-apple-darwin-pgo%2Blto-full.tar.zst",
+      "size": 59336019,
+      "sha256": "70025edd2ed4bf0a333677928ded047368726954253b6e428732e71e9c5a163e"
+    },
+    {
+      "id": "yt-dlp-zip", "kind": "runtime", "filename": "yt-dlp.pyz", "version": "2026.06.09",
+      "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.06.09/yt-dlp",
+      "size": 3056104,
+      "sha256": "e5d57466682cfa9d61e9cf7c8a4f09b00f4a62af37d3bbdc4bcffdf63615feac"
+    },
+    {
+      "id": "yt-dlp-source", "kind": "source", "filename": "yt-dlp-2026.06.09.tar.gz", "version": "2026.06.09",
+      "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.06.09/yt-dlp.tar.gz",
+      "size": 5980415,
+      "sha256": "7603f876b78d08b5fdd5bcd1d368590fde22c3c18e4ea00766d51120d21cc679"
+    },
+    {
+      "id": "quickjs-source", "kind": "source", "filename": "quickjs-2026-06-04.tar.xz", "version": "2026-06-04",
+      "url": "https://bellard.org/quickjs/quickjs-2026-06-04.tar.xz",
+      "size": 621500,
+      "sha256": "b376e839b322978313d929fd20663b11ba58b75df5a46c126dd19ea2fa70ad2a"
+    },
+    {
+      "id": "certifi-source", "kind": "source", "filename": "certifi-2026.5.20.tar.gz", "version": "2026.5.20",
+      "url": "https://files.pythonhosted.org/packages/f3/ce/ee2ecad540810a79593028e88299baeae54d346cc7a0d94b6199988b89b1/certifi-2026.5.20.tar.gz",
+      "size": 135422,
+      "sha256": "69dea482ab64caa7b9f6aba1c6bf48bb6a5448d1c0f1b17ab42ad8c763a5344d"
+    },
+    {
+      "id": "ejs-source", "kind": "source", "filename": "yt_dlp_ejs-0.8.0.tar.gz", "version": "0.8.0",
+      "url": "https://files.pythonhosted.org/packages/d3/e6/cceb9530e8f4e5940f6f7822d90e9d94f1b85343329a16baaf47bbbb3de1/yt_dlp_ejs-0.8.0.tar.gz",
+      "size": 96571,
+      "sha256": "d5fa1639f63b5c4af8d932495f60689d5370f1a095782c944f7f62a303eb104e"
+    },
+    {
+      "id": "astring-source", "kind": "source", "filename": "astring-1.9.0.tgz", "version": "1.9.0",
+      "url": "https://registry.npmjs.org/astring/-/astring-1.9.0.tgz",
+      "size": 60574,
+      "sha256": "422cca9707aca293e85eb54fdbbc5a0a167ad415236a325ff342e720e67afb49",
+      "upstream_integrity": "sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg=="
+    },
+    {
+      "id": "meriyah-source", "kind": "source", "filename": "meriyah-6.1.4.tgz", "version": "6.1.4",
+      "url": "https://registry.npmjs.org/meriyah/-/meriyah-6.1.4.tgz",
+      "size": 278043,
+      "sha256": "c0f105d9fb01bb48c76ea6ee382e6099277b95e3f351fb99b67ddfb79d6088b8",
+      "upstream_integrity": "sha512-Sz8FzjzI0kN13GK/6MVEsVzMZEPvOhnmmI1lU5+/1cGOiK3QUahntrNNtdVeihrO7t9JpoH75iMNXg6R6uWflQ=="
+    }
+  ]
+}

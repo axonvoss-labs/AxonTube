@@ -9,10 +9,19 @@ Third-party materials retain their own licenses and notices.
 
 ## Caption helper
 
-YouTube caption retrieval uses yt-dlp as a separate command-line process.
-yt-dlp's own source is released under the Unlicense. Its upstream macOS
-standalone executable includes third-party components and is licensed as
-GPLv3-or-later according to the pinned upstream release documentation.
+YouTube caption retrieval and explicit Save Video actions use yt-dlp as a
+separate command-line process. Public arm64 packages use its official Unix
+zipimport executable with a private Python runtime, QuickJS, and certificate
+roots. yt-dlp and EJS use the Unlicense; their bundled astring and meriyah
+JavaScript use MIT and ISC. QuickJS uses MIT. Python and its native components
+retain their respective licenses, and certifi's certificate bundle uses MPL-2.0.
+The exact profile, original notices, and certifi source-access directions are
+described in [release helper notices](vendor/release-helper/NOTICE.md).
+
+The optional local `prepare-ytdlp.sh` workflow instead retrieves upstream's
+PyInstaller macOS standalone executable. That separate combined artifact is
+GPLv3-or-later according to the pinned upstream release documentation; it is
+not the helper selected for this public binary profile.
 
 The application license does not replace the licenses of yt-dlp or its
 dependencies. Preserve the complete [yt-dlp LICENSE](vendor/yt-dlp/LICENSE),

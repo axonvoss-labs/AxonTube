@@ -11,7 +11,7 @@
   <img src="docs/assets/badges/macos.svg" alt="运行平台：macOS" width="104" height="20">
   <img src="docs/assets/badges/interface-languages.svg" alt="24 种界面语言" width="153" height="20">
   <a href="LICENSE"><img src="docs/assets/badges/license-mit.svg" alt="许可：MIT" width="81" height="20"></a>
-  <img src="docs/assets/badges/preview.svg" alt="版本 0.5.3 — 本地预览版" width="141" height="20">
+  <img src="docs/assets/badges/preview.svg" alt="版本 0.5.3 — macOS 预览版" width="141" height="20">
 </p>
 
 [English](README.md) · **简体中文** · [繁體中文](docs/guides/zh-Hant.md) · [日本語](docs/guides/ja.md) · [한국어](docs/guides/ko.md) · [Español](docs/guides/es.md)
@@ -30,7 +30,11 @@
 
 **24 种界面语言 · 多语字幕学习**
 
-> **0.5.3 · 源码预览版，请从源码构建。** 最近一次 YouTube 下载检查遇到登录／机器人验证，当前在线取流仍需实际验证。
+> **0.5.3 · 适用于 Apple 芯片 Mac 的预览版。** 最近一次 YouTube 下载检查遇到登录／机器人验证，当前在线取流仍需实际验证。
+
+**[下载 DMG 安装包](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.dmg)** · [下载 ZIP](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.zip) · [SHA-256 校验码](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/SHA256SUMS.txt) · [版本说明](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3)
+
+需要 Apple 芯片 Mac；最低部署目标为 macOS 14。此预览版采用临时签名，尚未经过 Apple 公证，首次打开前请阅读[安装说明](docs/INSTALL.md)。下方仍提供源码构建方法。
 
 ![AxonTube 双语播放与逐句练习](docs/assets/interface-study.png)
 
@@ -188,20 +192,24 @@ YouTube 保存选择同时含画面与声音的单文件格式，优先 MP4，�
 git clone --branch axontube https://github.com/axonvoss-labs/AxonTube.git
 cd AxonTube
 
-bash scripts/prepare-ytdlp.sh
+python3 scripts/prepare-release-helper.py --download \
+  --cache dist/helper-downloads --output dist/release-helper-arm64
 swift build -c release
 python3 scripts/check-core.py
 python3 scripts/check-model.py
 python3 scripts/check-captions.py
 python3 scripts/check-video-save.py
-xcrun swift scripts/make-icon.swift dist/PlayerIcon.iconset
-iconutil -c icns dist/PlayerIcon.iconset -o dist/PlayerIcon.icns
-bash scripts/package.sh --skip-build
-open "dist/0.5.3/AxonTube.app"
+bash scripts/package.sh --skip-build --helper-dir dist/release-helper-arm64 \
+  --output-dir dist/app-0.5.3
+open "dist/app-0.5.3/AxonTube.app"
+
+bash scripts/package-release.sh --app dist/app-0.5.3/AxonTube.app \
+  --helper-dir dist/release-helper-arm64 --output-dir dist/release-0.5.3
 ```
 
-第一条命令主动下载并校验固定版本 YouTube 工具，打包过程不下载依赖。
-本地应用使用 ad-hoc 签名，未做 Developer ID 签名或公证。
+依赖准备需要 Apple 芯片 Mac；带 `--download` 的命令显式下载并校验固定版本工具。
+输出目录必须是新目录，保留已有安装包。打包会生成图标、去除本机编译路径并校验
+辅助程序清单，打包过程本身不下载依赖。预览版使用 ad-hoc 签名，未做 Developer ID 签名或公证。
 完整 Xcode 可运行 `swift test`，CLT 检查脚本结果单独记录，不冒充 XCTest。
 
 [系统架构与代码导览](docs/ARCHITECTURE.md)

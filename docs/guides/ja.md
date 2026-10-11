@@ -6,7 +6,9 @@
 
 **AIで、世界の言語をもっと速く学ぼう。**
 
-バージョン 0.5.3 · ソースコードのプレビュー版 · ソースからビルド
+バージョン 0.5.3 · macOS プレビュー版 · Apple シリコン
+
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
 
 YouTubeを、あなた専用の語学教室に。YouTubeの字幕と自動翻訳を使って、好きな動画で学びましょう。2つの言語を並べて読み、一文ずつ繰り返し再生し、大切な学習素材を手元に残せます。
 
