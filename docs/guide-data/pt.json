@@ -1,0 +1,68 @@
+{
+  "lang": "pt",
+  "name": "Português",
+  "direction": "ltr",
+  "headline": "Aprenda os idiomas do mundo mais rápido com IA.",
+  "intro": "Transforme o YouTube na sua própria sala de aula de idiomas. Use as legendas e traduções automáticas do YouTube para aprender com os vídeos que você adora: leia dois idiomas lado a lado, repita cada frase e guarde o material que importa.",
+  "badge": "24 idiomas de interface · Legendas multilíngues",
+  "notice": "Versão 0.5.3 · Prévia do código-fonte · Compile a partir do código-fonte",
+  "labels": {
+    "language": "Idioma do documento",
+    "screenshots": "Capturas de tela",
+    "workflow": "Primeiros passos",
+    "features": "Recursos disponíveis",
+    "highlights": "Por que é útil",
+    "issues": "Problemas em aberto e limites",
+    "evidence": "O que foi verificado",
+    "readme": "README técnico",
+    "verification": "Registro detalhado de verificação",
+    "markdown": "Baixar este guia em Markdown",
+    "preview": "Clique em uma captura para ampliar",
+    "close": "Fechar",
+    "previous": "Captura anterior",
+    "next": "Próxima captura",
+    "priority": "Prioridade",
+    "category": "Tipo",
+    "issue": "Problema / próximo passo",
+    "languageScope": "24 é o número de idiomas disponíveis para a interface. Os idiomas das legendas dependem das faixas disponíveis no vídeo escolhido; isso não é uma promessa de fluência em 24 idiomas.",
+    "screenshotScope": "As capturas foram feitas no aplicativo real 0.5.3. O idioma de cada captura é indicado separadamente do idioma deste documento.",
+    "fallbackScreenshot": "Captura do aplicativo em inglês",
+    "localizedScreenshot": "Captura do aplicativo neste idioma",
+    "license": "O aplicativo usa a licença MIT; os componentes de terceiros mantêm seus avisos. AxonTube não é afiliado ao YouTube, ao Google ou à Apple.",
+    "updated": "Data do documento: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Abra o YouTube", "body": "Cole o link de um vídeo. As legendas disponíveis são solicitadas automaticamente, com inglês na primeira faixa e chinês tradicional na segunda. A primeira obtenção pode levar cerca de 1 a 2 minutos; a disponibilidade não é garantida."},
+    {"title": "2. Escolha e pratique", "body": "Use os dois menus suspensos de legendas visíveis. Clique em uma frase para ir até ela, reproduzi-la novamente ou ativar a repetição em loop."},
+    {"title": "3. Salve ou exporte", "body": "Salvar vídeo permite escolher uma pasta para a mídia acessível e as legendas disponíveis. Exportar legendas bilíngues cria arquivos Word, TXT ou SRT a partir das legendas carregadas."},
+    {"title": "4. Ajuste ao seu jeito", "body": "Mude o idioma da interface, a velocidade de reprodução, o tamanho das legendas e o deslocamento de tempo de cada faixa. O aplicativo lembra os idiomas escolhidos para a interface e as legendas."}
+  ],
+  "features": [
+    {"title": "Duas faixas de legendas independentes", "body": "Inglês / chinês tradicional por padrão; escolha entre os originais e as traduções automáticas disponíveis no vídeo atual. Se a segunda faixa falhar, as legendas obtidas com sucesso para a primeira continuam utilizáveis."},
+    {"title": "Prática focada em cada frase", "body": "Busca de frases, salto com um clique, frase anterior / seguinte, reprodução novamente, repetição em loop, velocidade de reprodução e acompanhamento da frase atual."},
+    {"title": "Vídeo com legendas sincronizadas", "body": "É possível salvar enquanto as legendas carregam. Cada operação cria uma nova pasta para o vídeo acessível e, quando há legendas disponíveis, adiciona faixas SRT temporizadas e arquivos de leitura bilíngue. Também é possível salvar apenas o vídeo; o trabalho incompleto permanece em uma pasta .partial."},
+    {"title": "Exportação para Word, TXT e SRT", "body": "Exporte as legendas disponíveis com os deslocamentos de tempo aplicados. Word e TXT associam os textos pela sobreposição de tempo. Se apenas uma faixa estiver carregada, seu conteúdo também poderá ser exportado."},
+    {"title": "24 interfaces localizadas", "body": "Menus, mensagens de status e o slogan de aprendizado mudam de idioma juntos. Árabe e hebraico oferecem layouts da direita para a esquerda; mudar a interface não altera o conteúdo das legendas."},
+    {"title": "Reprodução local e controles claros", "body": "Abra arquivos locais de mídia e legendas pelo menu Arquivo. Ações indisponíveis aparecem esmaecidas com o motivo; os modos selecionados têm destaque e marcas de seleção; durante o salvamento, o aplicativo indica que está ocupado."}
+  ],
+  "highlights": [
+    {"title": "De assistir a praticar em poucos passos", "body": "Quatro ações na barra de ferramentas tornam o fluxo principal direto: YouTube → Salvar vídeo → Legendas → Idioma. Não é necessário um botão extra para obter legendas."},
+    {"title": "Material de aprendizado para guardar", "body": "Legendas temporizadas e arquivos Word / TXT de fácil leitura ajudam tanto na prática de escuta quanto na revisão posterior. As exportações usam novos destinos e preservam os arquivos originais."},
+    {"title": "Uso local, sem chave de API de IA", "body": "Mídias locais e legendas salvas funcionam offline. O YouTube fornece as legendas do site e as traduções automáticas; o aplicativo não tem telemetria, não envia mídias locais e não exige uma chave de API de IA paga."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Verificação do serviço real", "title": "Disponibilidade de vídeos e legendas do YouTube", "body": "A última verificação online foi bloqueada pela exigência de login / verificação contra bots do YouTube. O sucesso dos downloads online nas condições atuais não foi confirmado. Antes da publicação, é necessário validar na rede prevista e com uma seleção representativa de vídeos."},
+    {"priority": "P1", "category": "Restrição da plataforma", "title": "Vídeos com restrições de incorporação ou de conta", "body": "Alguns autores ou vídeos não permitem reprodução incorporada. O Google SSO dentro do aplicativo não está implementado; o atalho para o navegador usa uma sessão separada de login e reprodução. Essas restrições não podem ser apresentadas como resolvidas."},
+    {"priority": "P1", "category": "Distribuição e compatibilidade", "title": "Assinatura e testes em mais Macs", "body": "O pacote tem assinatura ad hoc, sem notarização com Developer ID. Foi testado em Apple Silicon com macOS 26.5.2; macOS 27 e Macs Intel não foram testados. macOS 14 é o alvo de implantação, não uma prova de que todas as versões foram testadas."},
+    {"priority": "P2", "category": "Limites de formato e qualidade", "title": "Qualidade do download e fidelidade das legendas", "body": "O salvamento usa um fluxo completo de áudio e vídeo e não combina fluxos separados de alta resolução. A importação ASS/SSA traz apenas o texto. Legendas automáticas, traduções e associação bilíngue baseada no tempo podem conter erros. A reprodução local depende do suporte a codecs. A conversão opcional com FFmpeg pode omitir faixas de áudio adicionais, HDR e legendas incorporadas."},
+    {"priority": "P2", "category": "Não implementado", "title": "Histórico de aprendizado e ferramentas de estudo", "body": "Restauração do histórico de reprodução, coleções de vocabulário, revisão espaçada, OCR e extração de legendas em imagem não estão implementados. Preferências de idioma salvas não são progresso de aprendizado salvo."},
+    {"priority": "P2", "category": "Revisão editorial", "title": "Revisão linguística por falantes nativos", "body": "Todos os 24 idiomas da interface e os slogans localizados passaram nas verificações de troca de idioma. Isso comprova cobertura e comportamento, mas não uma revisão profissional de cada tradução por falantes nativos."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Boas-vindas e fluxo principal", "caption": "As quatro ações da barra de ferramentas, os dois seletores de legendas visíveis, o slogan localizado e o estado desativado claramente indicado antes de abrir um vídeo."},
+    {"id": "languages", "title": "Primeira e segunda legenda", "caption": "Captura real da interface em inglês com os menus independentes de legendas, definidos por padrão como inglês e chinês tradicional."},
+    {"id": "youtube", "title": "Abrir um link do YouTube", "caption": "Captura real da caixa de diálogo de link na interface em inglês. Abrir um link inicia a reprodução e solicita as duas faixas de legendas selecionadas."}
+  ],
+  "evidenceSummary": "Para 0.5.3: passaram 105 verificações do núcleo, 138 asserções do modelo, 29 verificações de legendas, 60 de salvamento de vídeo e 317 asserções da interface nativa. Todos os 24 idiomas foram selecionados no menu real; foram revisados seis idiomas de interface e os layouts compactos em alemão.",
+  "evidenceLimit": "Foram verificados a reprodução local, as exportações, as transições de estado e as caixas de diálogo nativas de salvamento. Dados de teste offline e testes de salvamento com um auxiliar simulado não provam que o YouTube permita atualmente downloads online de legendas ou vídeos. Nenhuma credencial de usuário foi importada."
+}

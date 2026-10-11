@@ -1,0 +1,68 @@
+{
+  "lang": "tr",
+  "name": "Türkçe",
+  "direction": "ltr",
+  "headline": "Yapay zekâyla dünya dillerini daha hızlı öğrenin.",
+  "intro": "YouTube'u kendi dil sınıfınıza dönüştürün. YouTube altyazıları ve otomatik çevirileriyle sevdiğiniz videolardan öğrenin: iki dili yan yana okuyun, her cümleyi tekrar oynatın ve sizin için önemli materyalleri saklayın.",
+  "badge": "24 arayüz dili · Çok dilli altyazılar",
+  "notice": "Sürüm 0.5.3 · Kaynak kod önizlemesi · Kaynaktan derleyin",
+  "labels": {
+    "language": "Belge dili",
+    "screenshots": "Ekran görüntüleri",
+    "workflow": "Başlarken",
+    "features": "Kullanılabilir özellikler",
+    "highlights": "Neden yararlı",
+    "issues": "Açık sorunlar ve sınırlar",
+    "evidence": "Doğrulananlar",
+    "readme": "Teknik README",
+    "verification": "Ayrıntılı doğrulama kaydı",
+    "markdown": "Bu kılavuzu Markdown olarak indirin",
+    "preview": "Büyütmek için ekran görüntüsüne tıklayın",
+    "close": "Kapat",
+    "previous": "Önceki ekran görüntüsü",
+    "next": "Sonraki ekran görüntüsü",
+    "priority": "Öncelik",
+    "category": "Tür",
+    "issue": "Sorun / sonraki adım",
+    "languageScope": "24, arayüzdeki dil seçeneği sayısıdır. Altyazı dilleri, seçilen videonun mevcut parçalarına bağlıdır; 24 dilde akıcılık vaadi değildir.",
+    "screenshotScope": "Ekran görüntüleri gerçek 0.5.3 uygulamasından alınmıştır. Görüntüdeki arayüz dili, bu belgenin dilinden ayrı olarak belirtilir.",
+    "fallbackScreenshot": "İngilizce uygulama ekran görüntüsü",
+    "localizedScreenshot": "Bu dilde uygulama ekran görüntüsü",
+    "license": "Uygulama MIT lisanslıdır; üçüncü taraf bileşenlerin bildirimleri korunur. AxonTube'un YouTube, Google veya Apple ile bağlantısı yoktur.",
+    "updated": "Belge tarihi: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. YouTube'u açın", "body": "Bir video bağlantısı yapıştırın. Mevcut altyazılar otomatik olarak istenir; ilk dil İngilizce, ikinci dil Geleneksel Çincedir. İlk alım yaklaşık 1–2 dakika sürebilir; kullanılabilirlik garanti edilmez."},
+    {"title": "2. Seçin ve pratik yapın", "body": "Görünen iki altyazı açılır menüsünü kullanın. Bir cümleye gitmek için tıklayın, cümleyi tekrar oynatın veya cümle döngüsünü etkinleştirin."},
+    {"title": "3. Kaydedin veya dışa aktarın", "body": "Videoyu Kaydet, erişilebilen medya ve mevcut altyazılar için bir klasör seçmenizi sağlar. İki Dilli Altyazıları Dışa Aktar, yüklenen altyazılardan Word, TXT veya SRT oluşturur."},
+    {"title": "4. Kendinize göre ayarlayın", "body": "Arayüz dilini, oynatma hızını, altyazı boyutunu ve her parçanın zaman kaymasını değiştirin. Uygulama, arayüz ve altyazı dili seçimlerini hatırlar."}
+  ],
+  "features": [
+    {"title": "İki bağımsız altyazı parçası", "body": "Varsayılanlar İngilizce ve Geleneksel Çincedir; mevcut videonun özgün altyazıları ve otomatik çevirileri arasından seçim yapın. İkinci parça başarısız olursa başarıyla alınan ilk parça kullanılabilir durumda kalır."},
+    {"title": "Cümle odaklı pratik", "body": "Cümle arama, tıklayarak ilgili zamana gitme, önceki / sonraki cümle, tekrar oynatma, döngü, oynatma hızı ve geçerli cümleyi takip etme."},
+    {"title": "Eşzamanlı altyazılarla video", "body": "Altyazılar yüklenirken kaydetme kullanılabilir kalır. Her işlem, erişilebilen videoyu içeren yeni bir klasör oluşturur; altyazı varsa zamanlanmış SRT parçaları ve iki dilli okuma dosyaları eklenir. Altyazısız video kaydetme de desteklenir. Tamamlanmamış işler .partial klasöründe kalır."},
+    {"title": "Word, TXT ve SRT dışa aktarımı", "body": "Mevcut altyazıları zaman kaymaları uygulanmış olarak dışa aktarın. Word ve TXT, metinleri zaman aralıklarının örtüşmesine göre eşleştirir. Yalnızca bir parça yüklenmişse onun içeriği yine de dışa aktarılabilir."},
+    {"title": "24 dilde yerelleştirilmiş arayüz", "body": "Menüler, durum mesajları ve öğrenme sloganı birlikte dil değiştirir. Arapça ve İbranice, sağdan sola düzenleri destekler; arayüz dilini değiştirmek altyazı içeriğini değiştirmez."},
+    {"title": "Yerel oynatma ve anlaşılır kontroller", "body": "Yerel medya ve altyazı dosyalarını Dosya menüsünden açın. Kullanılamayan işlemler nedenleriyle birlikte soluk gösterilir; seçili modlar vurgulanır ve onay işaretleriyle belirtilir; kaydetme sırasında meşgul durumu gösterilir."}
+  ],
+  "highlights": [
+    {"title": "İzlemeden pratiğe kısa bir yol", "body": "Araç çubuğundaki dört işlem ana akışı basit tutar: YouTube → Videoyu Kaydet → Altyazılar → Dil. Altyazı almak için ek bir düğme gerekmez."},
+    {"title": "Saklayabileceğiniz öğrenme materyalleri", "body": "Zamanlanmış altyazılar ve okunabilir Word / TXT dosyaları hem dinleme pratiğini hem de sonradan tekrarı destekler. Dışa aktarımlar yeni hedeflere yazılır ve özgün dosyalar korunur."},
+    {"title": "Yerel çalışma, yapay zekâ API anahtarı gerekmez", "body": "Yerel medya ve kaydedilmiş altyazılar çevrimdışı çalışır. Web sitesi altyazılarını ve otomatik çevirileri YouTube sağlar; uygulama telemetri toplamaz, yerel medyayı yüklemez ve ücretli yapay zekâ API anahtarı istemez."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Canlı hizmet doğrulaması", "title": "YouTube altyazılarının ve videolarının kullanılabilirliği", "body": "En son canlı kontrolde YouTube'un oturum açma / bot doğrulama gereksinimiyle karşılaşıldı. Mevcut koşullarda çevrimiçi indirmelerin başarılı olduğu doğrulanmadı. Genel yayımdan önce hedeflenen ağda ve temsili videolar üzerinde doğrulama yapılmalıdır."},
+    {"priority": "P1", "category": "Platform kısıtlaması", "title": "Gömülü oynatma ve hesapla kısıtlanan videolar", "body": "Bazı içerik üreticileri veya videolar gömülü oynatmaya izin vermez. Uygulama içinde Google SSO uygulanmamıştır; tarayıcı kısayolu ayrı bir giriş ve oynatma oturumu kullanır. Bu kısıtlamalar çözülmüş gibi sunulamaz."},
+    {"priority": "P1", "category": "Dağıtım ve uyumluluk", "title": "İmzalama ve daha fazla Mac üzerinde test", "body": "Paket, Developer ID noter onayı olmadan ad-hoc imzalıdır. macOS 26.5.2 üzerinde Apple Silicon test edildi; macOS 27 ve Intel Mac'ler test edilmedi. macOS 14 bir dağıtım hedefidir; her sürümün test edildiğinin kanıtı değildir."},
+    {"priority": "P2", "category": "Biçim ve kalite sınırları", "title": "İndirme kalitesi ve altyazı doğruluğu", "body": "Kaydetme, ses ve videoyu birlikte içeren tam bir akış kullanır; ayrı yüksek çözünürlüklü akışları birleştirmez. Yerel oynatma, kodek desteğine bağlıdır. İsteğe bağlı FFmpeg dönüştürmesinde ek ses parçaları, HDR ve gömülü altyazılar korunmayabilir. ASS/SSA içe aktarımı yalnızca metni alır. Otomatik altyazılar, çeviriler ve zamana dayalı iki dilli eşleştirme hatalar içerebilir."},
+    {"priority": "P2", "category": "Uygulanmadı", "title": "Öğrenme geçmişi ve çalışma araçları", "body": "Oynatma geçmişini geri yükleme, sözcük koleksiyonları, aralıklı tekrar, OCR ve görüntü altyazılarını çıkarma uygulanmamıştır. Kaydedilen dil tercihleri, öğrenme ilerlemesinin kaydedildiği anlamına gelmez."},
+    {"priority": "P2", "category": "Editöryal inceleme", "title": "Ana dili konuşan kişilerce dil incelemesi", "body": "24 arayüz dili seçeneğinin ve yerelleştirilmiş sloganların tamamı dil değiştirme kontrollerini geçti. Bu, kapsamı ve davranışı doğrular; her çevirinin ana dili konuşan kişilerce profesyonel olarak incelendiğini göstermez."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Karşılama ve ana iş akışı", "caption": "Video açılmadan önce araç çubuğundaki dört işlem, görünen iki altyazı seçicisi, yerelleştirilmiş slogan ve açıkça gösterilen devre dışı durum."},
+    {"id": "languages", "title": "Birinci ve ikinci altyazı", "caption": "Varsayılan olarak İngilizce ve Geleneksel Çince seçili olan bağımsız altyazı açılır menülerinin gerçek İngilizce arayüz görüntüsü."},
+    {"id": "youtube", "title": "YouTube bağlantısı açma", "caption": "Bağlantı iletişim kutusunun gerçek İngilizce arayüz görüntüsü. Bir bağlantı açıldığında oynatma başlar ve seçilen altyazı çifti istenir."}
+  ],
+  "evidenceSummary": "0.5.3 için 105 çekirdek kontrolü, 138 model doğrulaması, 29 altyazı kontrolü, 60 video kaydetme kontrolü ve 317 yerel arayüz doğrulaması geçti. Gerçek menüde 24 dil seçeneğinin tamamı seçildi; altı arayüz dili ve Almanca dar düzenler incelendi.",
+  "evidenceLimit": "Yerel oynatma, dışa aktarımlar, durum geçişleri ve yerel kaydetme iletişim kutuları doğrulandı. Çevrimdışı test verileri ve sahte yardımcıyla yapılan kaydetme testleri, YouTube'un şu anda çevrimiçi altyazı veya video indirmeye izin verdiğini kanıtlamaz. Kullanıcı kimlik bilgileri içe aktarılmadı."
+}

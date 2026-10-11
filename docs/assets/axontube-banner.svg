@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title description">
+  <title id="title">AxonTube — Learn the World’s Languages Faster with AI</title>
+  <desc id="description">AxonTube. Learn the world’s languages faster with AI. Turn YouTube into your personal language classroom with captions, automatic translation, and sentence practice.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#132e36"/><stop offset="1" stop-color="#090e1b"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#63e0b8" stop-opacity=".15"/><stop offset="1" stop-color="#63e0b8" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".025"/></pattern>
+  </defs>
+  <rect width="1440" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1440" height="420" rx="28" fill="url(#grid)"/>
+  <ellipse cx="260" cy="210" rx="370" ry="260" fill="url(#glow)"/>
+  <circle cx="239" cy="207" r="129" fill="none" stroke="#63e0b8" stroke-opacity=".13"/>
+  <path d="M205 127L334 207 205 287Z" fill="#63e0b8" fill-opacity=".1" stroke="#63e0b8" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M205 158L157 131M205 207H142M205 256L157 283M334 207H366" fill="none" stroke="#63e0b8" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#63e0b8"><circle cx="157" cy="131" r="10"/><circle cx="157" cy="283" r="10"/></g>
+  <g fill="#a1a3ff"><circle cx="142" cy="207" r="10"/><circle cx="366" cy="207" r="10"/></g>
+  <text x="455" y="103" fill="#63e0b8" font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-size="12" font-weight="600" letter-spacing="4">AI OPENS A WORLD OF LANGUAGES</text>
+  <text x="450" y="179" fill="#f1f7f7" font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="-3">AxonTube<tspan fill="#63e0b8">.</tspan></text>
+  <text x="455" y="220" fill="#98aab5" font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-size="21">Your Personal Language Classroom</text>
+  <text x="455" y="270" fill="#f1f7f7" font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-size="29" font-weight="600">Learn the World's Languages</text>
+  <text x="455" y="308" fill="#f1f7f7" font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-size="29" font-weight="600">Faster with AI.</text>
+  <path d="M455 335H1250" stroke="#fff" stroke-opacity=".07"/>
+  <text x="455" y="369" fill="#98aab5" font-family="-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-size="13" letter-spacing="1.1">NATIVE macOS   /   24 INTERFACE LANGUAGES   /   BILINGUAL CAPTIONS</text>
+</svg>

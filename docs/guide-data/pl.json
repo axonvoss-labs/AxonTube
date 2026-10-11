@@ -1,0 +1,68 @@
+{
+  "lang": "pl",
+  "name": "Polski",
+  "direction": "ltr",
+  "headline": "Ucz się języków świata szybciej dzięki AI.",
+  "intro": "Zamień YouTube w swoją osobistą klasę językową. Korzystaj z napisów i automatycznych tłumaczeń YouTube, by uczyć się z ulubionych filmów: czytaj dwa języki obok siebie, odtwarzaj każde zdanie ponownie i zachowuj najważniejsze materiały.",
+  "badge": "24 języki interfejsu · Wielojęzyczne napisy",
+  "notice": "Wersja 0.5.3 · Wersja poglądowa kodu źródłowego · Kompilacja ze źródeł",
+  "labels": {
+    "language": "Język dokumentu",
+    "screenshots": "Zrzuty ekranu",
+    "workflow": "Pierwsze kroki",
+    "features": "Dostępne funkcje",
+    "highlights": "Dlaczego warto",
+    "issues": "Otwarte problemy i ograniczenia",
+    "evidence": "Co zweryfikowano",
+    "readme": "Techniczny README",
+    "verification": "Szczegółowy zapis weryfikacji",
+    "markdown": "Pobierz ten przewodnik jako Markdown",
+    "preview": "Kliknij zrzut ekranu, aby go powiększyć",
+    "close": "Zamknij",
+    "previous": "Poprzedni zrzut ekranu",
+    "next": "Następny zrzut ekranu",
+    "priority": "Priorytet",
+    "category": "Typ",
+    "issue": "Problem / następny krok",
+    "languageScope": "Liczba 24 dotyczy języków interfejsu. Języki napisów zależą od ścieżek dostępnych dla wybranego filmu; nie jest to obietnica biegłości w 24 językach.",
+    "screenshotScope": "Zrzuty ekranu pochodzą z rzeczywistej aplikacji 0.5.3. Język zrzutu jest oznaczony niezależnie od języka tego dokumentu.",
+    "fallbackScreenshot": "Zrzut ekranu aplikacji w języku angielskim",
+    "localizedScreenshot": "Zrzut ekranu aplikacji w tym języku",
+    "license": "Aplikacja jest objęta licencją MIT; komponenty innych firm zachowują swoje informacje licencyjne. AxonTube nie jest powiązany z YouTube, Google ani Apple.",
+    "updated": "Data dokumentu: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Otwórz YouTube", "body": "Wklej link do filmu. Dostępne napisy są pobierane automatycznie: angielskie jako pierwsze, a chińskie tradycyjne jako drugie. Pierwsze pobieranie może trwać około 1–2 minut; dostępność nie jest gwarantowana."},
+    {"title": "2. Wybierz i ćwicz", "body": "Użyj dwóch widocznych list wyboru napisów. Kliknij zdanie, aby do niego przejść, odtworzyć je ponownie lub włączyć jego zapętlenie."},
+    {"title": "3. Zapisz lub eksportuj", "body": "Opcja Zapisz film pozwala wybrać folder na dostępne multimedia i napisy. Eksportuj napisy dwujęzyczne tworzy pliki Word, TXT lub SRT z wczytanych napisów."},
+    {"title": "4. Dostosuj do siebie", "body": "Zmień język interfejsu, szybkość odtwarzania, rozmiar napisów i przesunięcie czasu każdej ścieżki. Aplikacja zapamiętuje wybory języka interfejsu i napisów."}
+  ],
+  "features": [
+    {"title": "Dwie niezależne ścieżki napisów", "body": "Domyślnie angielski / chiński tradycyjny; wybieraj spośród dostępnych dla bieżącego filmu oryginałów i tłumaczeń automatycznych. Poprawnie pobrane napisy pierwszej ścieżki pozostają dostępne, jeśli pobranie drugiej się nie powiedzie."},
+    {"title": "Ćwiczenia zdanie po zdaniu", "body": "Wyszukiwanie zdań, przechodzenie kliknięciem, poprzednie / następne, ponowne odtwarzanie, zapętlanie, szybkość odtwarzania i śledzenie bieżącego zdania."},
+    {"title": "Film ze zsynchronizowanymi napisami", "body": "Zapisywanie jest dostępne także podczas wczytywania napisów. Każda operacja tworzy nowy folder z dostępnym filmem. Jeśli napisy są dostępne, dodawane są ścieżki SRT z czasami i dwujęzyczne pliki do czytania. Można też zapisać sam film; nieukończona praca pozostaje w folderze .partial."},
+    {"title": "Eksport do Word, TXT i SRT", "body": "Eksportuj dostępne napisy z zastosowanymi przesunięciami czasu. Word i TXT łączą teksty według nakładających się przedziałów czasowych. Jeśli wczytano tylko jedną ścieżkę, jej treść nadal można wyeksportować."},
+    {"title": "24 wersje językowe interfejsu", "body": "Menu, komunikaty stanu i hasło zachęcające do nauki zmieniają język razem. Arabski i hebrajski obsługują układ od prawej do lewej; zmiana języka interfejsu nie zmienia treści napisów."},
+    {"title": "Lokalne odtwarzanie i czytelne sterowanie", "body": "Otwieraj lokalne pliki multimedialne i napisy z menu Plik. Niedostępne czynności są przygaszone z podanym powodem; wybrane tryby mają wyróżnienia i znaczniki; zapisywaniu towarzyszy wskaźnik zajętości."}
+  ],
+  "highlights": [
+    {"title": "Krótka droga od oglądania do ćwiczeń", "body": "Cztery czynności na pasku narzędzi upraszczają główny tok pracy: YouTube → Zapisz film → Napisy → Język. Dodatkowy przycisk pobierania napisów nie jest potrzebny."},
+    {"title": "Materiały do nauki, które możesz zachować", "body": "Napisy z czasami oraz czytelne pliki Word / TXT wspierają ćwiczenie słuchania i późniejsze powtórki. Eksport korzysta z nowych miejsc docelowych i zachowuje oryginalne pliki."},
+    {"title": "Praca lokalna, bez klucza API AI", "body": "Lokalne multimedia i zapisane napisy działają offline. YouTube dostarcza napisy z serwisu i tłumaczenia automatyczne; aplikacja nie ma telemetrii, nie przesyła lokalnych multimediów i nie wymaga płatnego klucza API AI."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Weryfikacja usługi online", "title": "Dostępność napisów i filmów z YouTube", "body": "Ostatnia próba online napotkała wymóg logowania / weryfikacji antybotowej YouTube. Nie potwierdzono obecnie udanego pobierania online. Przed publicznym wydaniem sprawdź działanie w docelowej sieci i na reprezentatywnym zestawie filmów."},
+    {"priority": "P1", "category": "Ograniczenie platformy", "title": "Osadzanie i filmy z ograniczeniami konta", "body": "Niektórzy autorzy lub niektóre filmy nie zezwalają na odtwarzanie osadzone. Logowanie Google SSO w aplikacji nie jest zaimplementowane; skrót do przeglądarki używa osobnej sesji logowania i odtwarzania. Tych ograniczeń nie można przedstawiać jako rozwiązanych."},
+    {"priority": "P1", "category": "Dystrybucja i zgodność", "title": "Podpisywanie i szersze testy na Macach", "body": "Pakiet ma podpis ad hoc, bez notaryzacji Developer ID. Testowano Apple Silicon z macOS 26.5.2; nie testowano macOS 27 ani Maców z procesorem Intel. macOS 14 jest minimalną wersją docelową, a nie dowodem przetestowania każdej wersji."},
+    {"priority": "P2", "category": "Ograniczenia formatów i jakości", "title": "Jakość pobierania i wierność napisów", "body": "Zapisywanie korzysta z kompletnego strumienia audio/wideo i nie łączy oddzielnych strumieni wysokiej rozdzielczości. Lokalne odtwarzanie zależy od obsługi kodeków; opcjonalna konwersja przez FFmpeg może pomijać dodatkowe ścieżki audio, HDR i osadzone napisy. Import ASS/SSA obejmuje tylko tekst. Automatyczne napisy, tłumaczenia i parowanie dwujęzyczne według czasu mogą zawierać błędy."},
+    {"priority": "P2", "category": "Niezaimplementowane", "title": "Historia nauki i narzędzia do nauki", "body": "Przywracanie historii odtwarzania, zbiory słownictwa, powtórki rozłożone w czasie, OCR i wydobywanie napisów z obrazów nie są zaimplementowane. Zapisane preferencje językowe nie oznaczają zapisanych postępów w nauce."},
+    {"priority": "P2", "category": "Redakcja językowa", "title": "Weryfikacja przez rodzimych użytkowników języka", "body": "Wszystkie 24 języki interfejsu i przetłumaczone hasła przeszły testy przełączania. Potwierdza to zakres i zachowanie, a nie profesjonalną weryfikację każdego tłumaczenia przez rodzimych użytkowników języka."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Powitanie i główny tok pracy", "caption": "Cztery czynności na pasku narzędzi, dwa widoczne pola wyboru napisów, przetłumaczone hasło i czytelny stan nieaktywny przed otwarciem filmu."},
+    {"id": "languages", "title": "Pierwsze i drugie napisy", "caption": "Rzeczywisty zrzut angielskiego interfejsu z niezależnymi listami wyboru napisów, domyślnie ustawionymi na angielski i chiński tradycyjny."},
+    {"id": "youtube", "title": "Otwórz link do YouTube", "caption": "Rzeczywisty zrzut okna linku w angielskim interfejsie. Otwarcie linku rozpoczyna odtwarzanie i żąda wybranej pary napisów."}
+  ],
+  "evidenceSummary": "Dla 0.5.3 zaliczono: 105 testów podstawowych, 138 asercji modelu, 29 testów napisów, 60 testów zapisywania filmów i 317 asercji natywnego interfejsu. Wszystkie 24 języki wybrano w rzeczywistym menu; oceniono sześć języków interfejsu i zwarte układy niemieckie.",
+  "evidenceLimit": "Zweryfikowano lokalne odtwarzanie, eksport, przejścia między stanami i natywne okna zapisu. Dane testowe offline i testy zapisu z atrapą programu pomocniczego nie dowodzą, że YouTube obecnie pozwala pobierać napisy lub filmy online. Nie zaimportowano danych uwierzytelniających użytkownika."
+}

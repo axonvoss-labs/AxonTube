@@ -1,0 +1,17 @@
+.build/
+dist/
+.DS_Store
+.swiftpm/
+__pycache__/
+*.py[cod]
+qa/
+.env
+.env.*
+*.privatekey
+*.p12
+*.pfx
+vendor/yt-dlp/yt-dlp
+vendor/yt-dlp/yt-dlp.download
+vendor/yt-dlp/**/*.tar.gz
+vendor/yt-dlp/**/*.zip
+vendor/yt-dlp/UPSTREAM_RELEASE.json

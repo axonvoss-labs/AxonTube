@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>AxonTube</string>
+	<key>CFBundleDisplayName</key>
+	<string>AxonTube</string>
+	<key>CFBundleExecutable</key>
+	<string>AxonTube</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.github.axonvoss-labs.axontube</string>
+	<key>CFBundleVersion</key>
+	<string>11</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.5.3</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleIconFile</key>
+	<string>PlayerIcon</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Local Media</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>mp4</string>
+				<string>m4v</string>
+				<string>mov</string>
+				<string>mkv</string>
+				<string>avi</string>
+				<string>webm</string>
+				<string>mp3</string>
+				<string>m4a</string>
+				<string>wav</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Text Subtitle</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>srt</string>
+				<string>vtt</string>
+				<string>ass</string>
+				<string>ssa</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>zh-Hans</string>
+		<string>zh-Hant</string>
+		<string>ja</string>
+		<string>ko</string>
+		<string>es</string>
+		<string>fr</string>
+		<string>de</string>
+		<string>it</string>
+		<string>pt</string>
+		<string>ru</string>
+		<string>ar</string>
+		<string>hi</string>
+		<string>tr</string>
+		<string>vi</string>
+		<string>th</string>
+		<string>id</string>
+		<string>nl</string>
+		<string>pl</string>
+		<string>uk</string>
+		<string>sv</string>
+		<string>da</string>
+		<string>fi</string>
+		<string>he</string>
+	</array>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2026 axonvoss-labs. MIT licensed application; third-party components retain their licenses.</string>
+</dict>
+</plist>

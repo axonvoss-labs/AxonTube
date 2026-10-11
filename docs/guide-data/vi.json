@@ -1,0 +1,68 @@
+{
+  "lang": "vi",
+  "name": "Tiếng Việt",
+  "direction": "ltr",
+  "headline": "Học các ngôn ngữ trên thế giới nhanh hơn cùng AI.",
+  "intro": "Biến YouTube thành lớp học ngôn ngữ của riêng bạn. Dùng phụ đề và bản dịch tự động của YouTube để học qua những video bạn yêu thích: đọc song song hai ngôn ngữ, phát lại từng câu và lưu giữ tài liệu hữu ích.",
+  "badge": "24 ngôn ngữ giao diện · Phụ đề đa ngôn ngữ",
+  "notice": "Phiên bản 0.5.3 · Bản xem trước mã nguồn · Biên dịch từ mã nguồn",
+  "labels": {
+    "language": "Ngôn ngữ tài liệu",
+    "screenshots": "Ảnh chụp màn hình",
+    "workflow": "Bắt đầu sử dụng",
+    "features": "Tính năng hiện có",
+    "highlights": "Lợi ích",
+    "issues": "Vấn đề còn tồn tại và giới hạn",
+    "evidence": "Những gì đã được xác minh",
+    "readme": "README kỹ thuật",
+    "verification": "Bản ghi xác minh chi tiết",
+    "markdown": "Tải hướng dẫn này dưới dạng Markdown",
+    "preview": "Nhấp vào ảnh chụp để phóng to",
+    "close": "Đóng",
+    "previous": "Ảnh chụp trước",
+    "next": "Ảnh chụp tiếp theo",
+    "priority": "Ưu tiên",
+    "category": "Loại",
+    "issue": "Vấn đề / bước tiếp theo",
+    "languageScope": "24 là số lựa chọn ngôn ngữ giao diện. Ngôn ngữ phụ đề phụ thuộc vào các luồng có sẵn của video đã chọn; đây không phải lời hứa giúp bạn thông thạo 24 ngôn ngữ.",
+    "screenshotScope": "Ảnh được chụp từ ứng dụng 0.5.3 thực tế. Ngôn ngữ giao diện trong ảnh được ghi riêng với ngôn ngữ của tài liệu này.",
+    "fallbackScreenshot": "Ảnh ứng dụng với giao diện tiếng Anh",
+    "localizedScreenshot": "Ảnh ứng dụng bằng ngôn ngữ này",
+    "license": "Ứng dụng dùng giấy phép MIT; các thành phần bên thứ ba giữ nguyên thông báo của mình. AxonTube không có quan hệ liên kết với YouTube, Google hay Apple.",
+    "updated": "Ngày tài liệu: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Mở YouTube", "body": "Dán liên kết video. Phụ đề có sẵn được yêu cầu tự động, với tiếng Anh ở luồng thứ nhất và tiếng Trung phồn thể ở luồng thứ hai. Lần lấy đầu tiên có thể mất khoảng 1–2 phút; không bảo đảm luôn có phụ đề."},
+    {"title": "2. Chọn và luyện tập", "body": "Dùng hai danh sách chọn phụ đề đang hiển thị. Nhấp vào một câu để chuyển đến câu đó, phát lại hoặc bật lặp câu."},
+    {"title": "3. Lưu hoặc xuất", "body": "Lưu video cho phép chọn thư mục chứa nội dung truy cập được và phụ đề có sẵn. Xuất phụ đề song ngữ tạo tệp Word, TXT hoặc SRT từ phụ đề đã tải."},
+    {"title": "4. Tùy chỉnh theo ý bạn", "body": "Thay đổi ngôn ngữ giao diện, tốc độ phát, cỡ phụ đề và độ lệch thời gian của từng luồng. Ứng dụng ghi nhớ lựa chọn ngôn ngữ giao diện và phụ đề."}
+  ],
+  "features": [
+    {"title": "Hai luồng phụ đề độc lập", "body": "Mặc định là tiếng Anh và tiếng Trung phồn thể; chọn trong các bản gốc và bản dịch tự động có sẵn của video hiện tại. Phụ đề luồng thứ nhất đã lấy thành công vẫn dùng được nếu luồng thứ hai thất bại."},
+    {"title": "Luyện tập theo từng câu", "body": "Tìm câu, nhấp để chuyển đến thời điểm tương ứng, câu trước / sau, phát lại, lặp, điều chỉnh tốc độ phát và theo dõi câu hiện tại."},
+    {"title": "Video kèm phụ đề đồng bộ", "body": "Vẫn có thể lưu trong khi phụ đề đang tải. Mỗi thao tác tạo một thư mục mới chứa video truy cập được; nếu có phụ đề, các luồng SRT kèm mốc thời gian và tệp đọc song ngữ sẽ được thêm vào. Cũng hỗ trợ lưu video không kèm phụ đề. Phần chưa hoàn tất nằm trong thư mục .partial."},
+    {"title": "Xuất Word, TXT và SRT", "body": "Xuất phụ đề có sẵn sau khi áp dụng độ lệch thời gian. Word và TXT ghép văn bản theo phần giao nhau của khoảng thời gian. Nếu chỉ tải được một luồng, vẫn có thể xuất nội dung của luồng đó."},
+    {"title": "Giao diện được bản địa hóa sang 24 ngôn ngữ", "body": "Menu, thông báo trạng thái và khẩu hiệu học tập cùng chuyển ngôn ngữ. Tiếng Ả Rập và tiếng Do Thái hỗ trợ bố cục từ phải sang trái; đổi ngôn ngữ giao diện không làm thay đổi nội dung phụ đề."},
+    {"title": "Phát tệp cục bộ và điều khiển rõ ràng", "body": "Mở tệp nội dung và phụ đề cục bộ từ menu Tệp. Thao tác bị vô hiệu hóa được làm mờ kèm lý do; chế độ đã chọn được tô nổi và đánh dấu; quá trình lưu hiển thị trạng thái đang xử lý."}
+  ],
+  "highlights": [
+    {"title": "Từ xem đến luyện tập chỉ vài bước", "body": "Bốn thao tác trên thanh công cụ giữ luồng chính đơn giản: YouTube → Lưu video → Phụ đề → Ngôn ngữ. Không cần thêm nút lấy phụ đề."},
+    {"title": "Tài liệu học có thể giữ lại", "body": "Phụ đề có mốc thời gian và tệp Word / TXT dễ đọc hỗ trợ cả luyện nghe lẫn ôn tập sau này. Các bản xuất dùng vị trí lưu mới và giữ nguyên tệp gốc."},
+    {"title": "Làm việc cục bộ, không cần khóa API AI", "body": "Nội dung cục bộ và phụ đề đã lưu hoạt động ngoại tuyến. YouTube cung cấp phụ đề trang web và bản dịch tự động; ứng dụng không thu thập dữ liệu đo từ xa, không tải nội dung cục bộ lên và không yêu cầu khóa API AI trả phí."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Xác minh dịch vụ trực tiếp", "title": "Khả năng truy cập phụ đề và video YouTube", "body": "Lần kiểm tra trực tiếp gần nhất gặp yêu cầu đăng nhập / xác minh chống bot của YouTube. Chưa xác nhận được việc tải trực tuyến thành công trong điều kiện hiện tại. Cần xác minh trên mạng dự kiến sử dụng và với các video đại diện trước khi phát hành công khai."},
+    {"priority": "P1", "category": "Hạn chế của nền tảng", "title": "Nhúng video và video bị giới hạn theo tài khoản", "body": "Một số nhà sáng tạo hoặc video không cho phép phát nhúng. Chưa triển khai Google SSO trong ứng dụng; lối tắt mở trình duyệt dùng phiên đăng nhập và phát riêng. Không thể trình bày các hạn chế này như đã được giải quyết."},
+    {"priority": "P1", "category": "Phân phối và tương thích", "title": "Ký ứng dụng và kiểm thử trên nhiều máy Mac hơn", "body": "Gói được ký ad-hoc, chưa có công chứng Developer ID. Đã kiểm thử Apple Silicon trên macOS 26.5.2; chưa kiểm thử macOS 27 và máy Mac dùng Intel. macOS 14 là phiên bản triển khai tối thiểu mục tiêu, không phải bằng chứng đã kiểm thử mọi phiên bản."},
+    {"priority": "P2", "category": "Giới hạn định dạng và chất lượng", "title": "Chất lượng tải xuống và độ chính xác của phụ đề", "body": "Việc lưu dùng một luồng đầy đủ gồm cả âm thanh và hình ảnh, không ghép các luồng độ phân giải cao riêng biệt. Phát cục bộ phụ thuộc vào khả năng hỗ trợ codec. Chuyển đổi tùy chọn bằng FFmpeg có thể không giữ lại các luồng âm thanh bổ sung, HDR và phụ đề nhúng. Nhập ASS/SSA chỉ lấy văn bản. Phụ đề tự động, bản dịch và cách ghép song ngữ dựa trên thời gian có thể có lỗi."},
+    {"priority": "P2", "category": "Chưa triển khai", "title": "Lịch sử học và công cụ học tập", "body": "Chưa triển khai khôi phục lịch sử phát, bộ sưu tập từ vựng, ôn tập ngắt quãng, OCR và trích xuất phụ đề dạng ảnh. Lưu lựa chọn ngôn ngữ không có nghĩa là lưu tiến độ học."},
+    {"priority": "P2", "category": "Rà soát biên tập", "title": "Rà soát ngôn ngữ bởi người bản ngữ", "body": "Cả 24 lựa chọn ngôn ngữ giao diện và khẩu hiệu được bản địa hóa đã vượt qua kiểm tra chuyển đổi. Điều đó xác nhận phạm vi hỗ trợ và hành vi, không phải việc mọi bản dịch đã được người bản ngữ rà soát chuyên nghiệp."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Chào mừng và luồng thao tác chính", "caption": "Bốn thao tác trên thanh công cụ, hai bộ chọn phụ đề hiển thị rõ, khẩu hiệu được bản địa hóa và trạng thái vô hiệu hóa rõ ràng trước khi mở video."},
+    {"id": "languages", "title": "Phụ đề thứ nhất và thứ hai", "caption": "Ảnh chụp thực tế giao diện tiếng Anh với hai danh sách chọn phụ đề độc lập, mặc định là tiếng Anh và tiếng Trung phồn thể."},
+    {"id": "youtube", "title": "Mở liên kết YouTube", "caption": "Ảnh chụp thực tế hộp thoại liên kết trong giao diện tiếng Anh. Mở liên kết sẽ bắt đầu phát và yêu cầu cặp phụ đề đã chọn."}
+  ],
+  "evidenceSummary": "Với 0.5.3: đã vượt qua 105 kiểm tra lõi, 138 phép kiểm chứng mô hình, 29 kiểm tra phụ đề, 60 kiểm tra lưu video và 317 phép kiểm chứng giao diện gốc. Cả 24 ngôn ngữ đã được chọn trong menu thực tế; đã rà soát giao diện ở sáu ngôn ngữ và bố cục thu gọn bằng tiếng Đức.",
+  "evidenceLimit": "Đã xác minh phát cục bộ, xuất tệp, chuyển trạng thái và hộp thoại lưu gốc. Dữ liệu kiểm thử ngoại tuyến và các bài kiểm thử lưu bằng công cụ trợ giúp giả lập không chứng minh YouTube hiện cho phép tải phụ đề hoặc video trực tuyến. Không nhập thông tin xác thực của người dùng."
+}

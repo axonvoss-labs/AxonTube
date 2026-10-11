@@ -1,0 +1,68 @@
+{
+  "lang": "de",
+  "name": "Deutsch",
+  "direction": "ltr",
+  "headline": "Lerne die Sprachen der Welt schneller mit KI.",
+  "intro": "Mach YouTube zu deinem persönlichen Sprachkurs. Lerne mit YouTube-Untertiteln und automatischen Übersetzungen aus deinen Lieblingsvideos: Lies zwei Sprachen nebeneinander, spiele jeden Satz erneut ab und behalte das Lernmaterial, das dir wichtig ist.",
+  "badge": "24 Oberflächensprachen · Mehrsprachige Untertitel",
+  "notice": "Version 0.5.3 · Quellcode-Vorschau · Aus dem Quellcode kompilieren",
+  "labels": {
+    "language": "Dokumentsprache",
+    "screenshots": "Screenshots",
+    "workflow": "Erste Schritte",
+    "features": "Verfügbare Funktionen",
+    "highlights": "Was die App nützlich macht",
+    "issues": "Offene Punkte und Grenzen",
+    "evidence": "Was überprüft wurde",
+    "readme": "Technische README",
+    "verification": "Ausführlicher Prüfbericht",
+    "markdown": "Diesen Leitfaden als Markdown herunterladen",
+    "preview": "Zum Vergrößern auf einen Screenshot klicken",
+    "close": "Schließen",
+    "previous": "Vorheriger Screenshot",
+    "next": "Nächster Screenshot",
+    "priority": "Priorität",
+    "category": "Art",
+    "issue": "Problem / nächster Schritt",
+    "languageScope": "24 bezeichnet die Anzahl der wählbaren Oberflächensprachen. Die Untertitelsprachen hängen von den verfügbaren Spuren des gewählten Videos ab; fließende Kenntnisse in 24 Sprachen werden damit nicht versprochen.",
+    "screenshotScope": "Die Screenshots stammen aus der tatsächlichen Anwendung 0.5.3. Die Sprache eines Screenshots wird unabhängig von der Sprache dieses Dokuments angegeben.",
+    "fallbackScreenshot": "Screenshot der Anwendung auf Englisch",
+    "localizedScreenshot": "Screenshot der Anwendung in dieser Sprache",
+    "license": "Die Anwendung steht unter der MIT-Lizenz; die Hinweise zu Komponenten Dritter bleiben erhalten. AxonTube ist nicht mit YouTube, Google oder Apple verbunden.",
+    "updated": "Dokumentdatum: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. YouTube öffnen", "body": "Füge einen Videolink ein. Verfügbare Untertitel werden automatisch angefordert, standardmäßig Englisch als erste und traditionelles Chinesisch als zweite Spur. Der erste Abruf kann etwa 1–2 Minuten dauern; die Verfügbarkeit ist nicht garantiert."},
+    {"title": "2. Auswählen und üben", "body": "Nutze die beiden sichtbaren Untertitelmenüs. Klicke auf einen Satz, um dorthin zu springen, ihn erneut abzuspielen oder die Satzschleife zu aktivieren."},
+    {"title": "3. Speichern oder exportieren", "body": "Mit „Video speichern“ wählst du einen Ordner für zugängliche Medien und verfügbare Untertitel. „Zweisprachige Untertitel exportieren“ erstellt Word-, TXT- oder SRT-Dateien aus den geladenen Untertiteln."},
+    {"title": "4. An deine Bedürfnisse anpassen", "body": "Ändere Oberflächensprache, Wiedergabegeschwindigkeit, Untertitelgröße und den Zeitversatz jeder Spur. Die App merkt sich die gewählten Oberflächen- und Untertitelsprachen."}
+  ],
+  "features": [
+    {"title": "Zwei unabhängige Untertitelspuren", "body": "Standardmäßig Englisch / traditionelles Chinesisch; wähle aus den verfügbaren Originalen und automatischen Übersetzungen des aktuellen Videos. Erfolgreich geladene Untertitel der ersten Spur bleiben nutzbar, wenn die zweite Spur fehlschlägt."},
+    {"title": "Gezielt Satz für Satz üben", "body": "Satzsuche, Sprung per Klick, vorheriger / nächster Satz, erneute Wiedergabe, Schleifen, Wiedergabegeschwindigkeit und automatisches Folgen des aktuellen Satzes."},
+    {"title": "Video mit synchronisierten Untertiteln", "body": "Speichern bleibt möglich, während Untertitel geladen werden. Jeder Vorgang erstellt einen neuen Ordner für das zugängliche Video und fügt bei verfügbaren Untertiteln SRT-Spuren mit Zeitangaben sowie zweisprachige Lesedateien hinzu. Auch das Video allein kann gespeichert werden; unvollständige Vorgänge verbleiben in einem .partial-Ordner."},
+    {"title": "Export als Word, TXT und SRT", "body": "Exportiere verfügbare Untertitel mit angewendetem Zeitversatz. Word und TXT ordnen die Texte anhand zeitlicher Überschneidungen einander zu. Wenn nur eine Spur geladen ist, lässt sich deren Inhalt ebenfalls exportieren."},
+    {"title": "24 lokalisierte Oberflächen", "body": "Menüs, Statusmeldungen und der Lernslogan wechseln gemeinsam die Sprache. Arabisch und Hebräisch unterstützen Layouts von rechts nach links; ein Wechsel der Oberflächensprache verändert die Untertitelinhalte nicht."},
+    {"title": "Lokale Wiedergabe und klare Bedienelemente", "body": "Öffne lokale Medien- und Untertiteldateien über das Menü „Datei“. Nicht verfügbare Aktionen sind mit Begründung ausgegraut; gewählte Modi werden hervorgehoben und mit Häkchen markiert; beim Speichern erscheint ein Beschäftigtstatus."}
+  ],
+  "highlights": [
+    {"title": "In wenigen Schritten vom Anschauen zum Üben", "body": "Vier Aktionen in der Symbolleiste machen den Hauptablauf übersichtlich: YouTube → Video speichern → Untertitel → Sprache. Zum Abrufen der Untertitel ist keine zusätzliche Schaltfläche nötig."},
+    {"title": "Lernmaterial zum Behalten", "body": "Untertitel mit Zeitangaben und gut lesbare Word- / TXT-Dateien eignen sich zum Hörtraining und zum späteren Wiederholen. Exporte verwenden neue Speicherziele und erhalten die Originaldateien."},
+    {"title": "Lokal arbeiten, ohne KI-API-Schlüssel", "body": "Lokale Medien und gespeicherte Untertitel funktionieren offline. YouTube stellt die Website-Untertitel und automatischen Übersetzungen bereit; die App hat keine Telemetrie, lädt keine lokalen Medien hoch und benötigt keinen kostenpflichtigen KI-API-Schlüssel."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Prüfung des Live-Dienstes", "title": "Verfügbarkeit von YouTube-Untertiteln und -Videos", "body": "Die letzte Online-Prüfung stieß auf YouTubes Anforderung zur Anmeldung / Bot-Verifizierung. Erfolgreiche aktuelle Online-Downloads sind nicht belegt. Vor einer Veröffentlichung muss die Funktion im vorgesehenen Netzwerk und mit repräsentativen Videos geprüft werden."},
+    {"priority": "P1", "category": "Plattformbeschränkung", "title": "Videos mit Einbettungs- und Kontobeschränkungen", "body": "Manche Urheber oder Videos erlauben keine eingebettete Wiedergabe. Google SSO innerhalb der App ist nicht implementiert; der Browser-Shortcut verwendet eine separate Anmelde- und Wiedergabesitzung. Diese Einschränkungen dürfen nicht als gelöst dargestellt werden."},
+    {"priority": "P1", "category": "Verteilung und Kompatibilität", "title": "Signierung und Tests auf weiteren Macs", "body": "Das Paket ist ad hoc signiert, ohne Developer-ID-Notarisierung. Getestet wurde Apple Silicon mit macOS 26.5.2; macOS 27 und Intel-Macs wurden nicht getestet. macOS 14 ist das Deployment-Ziel, kein Nachweis dafür, dass jede Version geprüft wurde."},
+    {"priority": "P2", "category": "Format- und Qualitätsgrenzen", "title": "Downloadqualität und Untertiteltreue", "body": "Zum Speichern wird ein vollständiger Audio-/Videostream verwendet; separate hochauflösende Streams werden nicht zusammengeführt. Aus ASS/SSA wird nur Text importiert. Automatische Untertitel, Übersetzungen und die zeitbasierte zweisprachige Zuordnung können Fehler enthalten. Lokale Wiedergabe hängt von der Codec-Unterstützung ab. Bei der optionalen FFmpeg-Konvertierung können zusätzliche Audiospuren, HDR und eingebettete Untertitel entfallen."},
+    {"priority": "P2", "category": "Nicht implementiert", "title": "Lernverlauf und Lernwerkzeuge", "body": "Das Wiederherstellen des Wiedergabeverlaufs, Vokabelsammlungen, zeitlich gestaffeltes Wiederholen, OCR und das Extrahieren von Bilduntertiteln sind nicht implementiert. Gespeicherte Spracheinstellungen sind kein gespeicherter Lernfortschritt."},
+    {"priority": "P2", "category": "Redaktionelle Prüfung", "title": "Sprachprüfung durch Muttersprachler", "body": "Alle 24 Oberflächensprachen und lokalisierten Slogans haben die Umschaltprüfungen bestanden. Das bestätigt Abdeckung und Verhalten, aber keine professionelle muttersprachliche Prüfung jeder Übersetzung."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Willkommen und Hauptablauf", "caption": "Die vier Aktionen der Symbolleiste, zwei sichtbare Untertitelauswahlen, der lokalisierte Slogan und der deutlich erkennbare deaktivierte Zustand vor dem Öffnen eines Videos."},
+    {"id": "languages", "title": "Erster und zweiter Untertitel", "caption": "Echte Aufnahme der englischen Oberfläche mit den unabhängigen Untertitelmenüs, standardmäßig auf Englisch und traditionelles Chinesisch eingestellt."},
+    {"id": "youtube", "title": "Einen YouTube-Link öffnen", "caption": "Echte Aufnahme des Linkdialogs in der englischen Oberfläche. Das Öffnen eines Links startet die Wiedergabe und fordert die beiden gewählten Untertitelspuren an."}
+  ],
+  "evidenceSummary": "Für 0.5.3 bestanden: 105 Kernprüfungen, 138 Modell-Assertions, 29 Untertitelprüfungen, 60 Prüfungen zum Videospeichern und 317 Assertions der nativen Oberfläche. Alle 24 Sprachen wurden im tatsächlichen Menü ausgewählt; sechs Oberflächensprachen und kompakte deutsche Layouts wurden geprüft.",
+  "evidenceLimit": "Lokale Wiedergabe, Exporte, Zustandswechsel und native Speicherdialoge wurden überprüft. Offline-Testdaten und Speichertests mit einem simulierten Hilfsprogramm belegen nicht, dass YouTube derzeit Online-Downloads von Untertiteln oder Videos erlaubt. Es wurden keine Benutzeranmeldedaten importiert."
+}

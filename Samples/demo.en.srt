@@ -1,0 +1,31 @@
+1
+00:00:00,500 --> 00:00:03,000
+Welcome to AxonTube.
+
+2
+00:00:03,200 --> 00:00:05,800
+Listen to one sentence at a time.
+
+3
+00:00:06,000 --> 00:00:08,700
+Read the English and Chinese subtitles.
+
+4
+00:00:09,000 --> 00:00:11,500
+Click a sentence to hear it again.
+
+5
+00:00:12,000 --> 00:00:14,700
+Slow down when you need more time.
+
+6
+00:00:15,000 --> 00:00:17,600
+Repeat a useful phrase out loud.
+
+7
+00:00:18,000 --> 00:00:20,800
+Small steps make learning easier.
+
+8
+00:00:21,000 --> 00:00:23,800
+Enjoy your next language adventure.

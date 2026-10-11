@@ -1,0 +1,68 @@
+{
+  "lang": "nl",
+  "name": "Nederlands",
+  "direction": "ltr",
+  "headline": "Leer de talen van de wereld sneller met AI.",
+  "intro": "Maak van YouTube je persoonlijke taalklas. Leer met YouTube-ondertitels en automatische vertalingen van video's die je graag kijkt: lees twee talen naast elkaar, speel elke zin opnieuw af en bewaar het materiaal dat voor jou telt.",
+  "badge": "24 interfacetalen · Meertalige ondertitels",
+  "notice": "Versie 0.5.3 · Voorlopige versie als broncode · Bouw vanuit broncode",
+  "labels": {
+    "language": "Documenttaal",
+    "screenshots": "Schermafbeeldingen",
+    "workflow": "Aan de slag",
+    "features": "Beschikbare functies",
+    "highlights": "Waarom het handig is",
+    "issues": "Openstaande punten en beperkingen",
+    "evidence": "Wat is gecontroleerd",
+    "readme": "Technische README",
+    "verification": "Gedetailleerd verificatieverslag",
+    "markdown": "Download deze gids als Markdown",
+    "preview": "Klik op een schermafbeelding om deze te vergroten",
+    "close": "Sluiten",
+    "previous": "Vorige schermafbeelding",
+    "next": "Volgende schermafbeelding",
+    "priority": "Prioriteit",
+    "category": "Type",
+    "issue": "Punt / volgende stap",
+    "languageScope": "24 verwijst naar het aantal interfacetalen. Ondertiteltalen hangen af van de beschikbare sporen van de gekozen video; het is geen belofte dat je 24 talen vloeiend leert spreken.",
+    "screenshotScope": "De schermafbeeldingen zijn gemaakt in de daadwerkelijke app 0.5.3. De taal van elke schermafbeelding staat apart vermeld van de taal van dit document.",
+    "fallbackScreenshot": "Schermafbeelding van de Engelstalige app",
+    "localizedScreenshot": "Schermafbeelding van de app in deze taal",
+    "license": "De app heeft een MIT-licentie; voor componenten van derden blijven hun licentievermeldingen gelden. AxonTube is niet verbonden aan YouTube, Google of Apple.",
+    "updated": "Documentdatum: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Open YouTube", "body": "Plak een videolink. Beschikbare ondertitels worden automatisch opgevraagd, met Engels als eerste taal en Traditioneel Chinees als tweede. Het eerste ophalen kan ongeveer 1–2 minuten duren; beschikbaarheid is niet gegarandeerd."},
+    {"title": "2. Kies en oefen", "body": "Gebruik de twee zichtbare keuzemenu's voor ondertitels. Klik op een zin om erheen te springen, deze opnieuw af te spelen of de zin in een lus te herhalen."},
+    {"title": "3. Sla op of exporteer", "body": "Met Video opslaan kies je een map voor toegankelijke media en beschikbare ondertitels. Tweetalige ondertitels exporteren maakt Word-, TXT- of SRT-bestanden van de geladen ondertitels."},
+    {"title": "4. Pas het aan", "body": "Wijzig de interfacetaal, afspeelsnelheid, ondertitelgrootte en tijdverschuiving per spoor. De app onthoudt je keuzes voor de interface- en ondertiteltalen."}
+  ],
+  "features": [
+    {"title": "Twee onafhankelijke ondertitelsporen", "body": "Standaard Engels / Traditioneel Chinees; kies uit de beschikbare originele ondertitels en automatische vertalingen van de huidige video. Succesvol geladen ondertitels van het eerste spoor blijven bruikbaar als het tweede spoor mislukt."},
+    {"title": "Oefenen per zin", "body": "Zinnen zoeken, klikken om erheen te springen, vorige / volgende, opnieuw afspelen, herhalen in een lus, afspeelsnelheid en de huidige zin volgen."},
+    {"title": "Video met gesynchroniseerde ondertitels", "body": "Opslaan blijft beschikbaar terwijl ondertitels laden. Elke bewerking maakt een nieuwe map met toegankelijke video. Als ondertitels beschikbaar zijn, worden SRT-sporen met tijdcodes en tweetalige leesbestanden toegevoegd. Alleen video opslaan wordt ook ondersteund; onvoltooid werk blijft in een .partial-map."},
+    {"title": "Export naar Word, TXT en SRT", "body": "Exporteer beschikbare ondertitels met de ingestelde tijdverschuivingen. Word en TXT koppelen tekst op basis van overlappende tijden. Als slechts één spoor is geladen, kan de inhoud daarvan nog steeds worden geëxporteerd."},
+    {"title": "24 vertaalde interfaces", "body": "Menu's, statusmeldingen en de leerslogan veranderen samen van taal. Arabisch en Hebreeuws ondersteunen een indeling van rechts naar links; de ondertitelinhoud verandert niet wanneer je de interfacetaal wijzigt."},
+    {"title": "Lokaal afspelen en duidelijke bediening", "body": "Open lokale media- en ondertitelbestanden via het menu Bestand. Uitgeschakelde acties zijn gedimd met een uitleg; geselecteerde modi hebben markeringen en vinkjes; tijdens opslaan wordt een bezigstatus getoond."}
+  ],
+  "highlights": [
+    {"title": "Snel van kijken naar oefenen", "body": "Vier werkbalkacties houden de hoofdroute eenvoudig: YouTube → Video opslaan → Ondertitels → Taal. Een extra knop om ondertitels op te halen is niet nodig."},
+    {"title": "Leermateriaal om te bewaren", "body": "Ondertitels met tijdcodes en leesbare Word- / TXT-bestanden helpen bij luisteroefeningen en later herhalen. Exports gebruiken nieuwe bestemmingen en behouden de originele bestanden."},
+    {"title": "Lokaal werken, zonder AI-API-sleutel", "body": "Lokale media en opgeslagen ondertitels werken offline. YouTube levert website-ondertitels en automatische vertalingen; de app heeft geen telemetrie, uploadt geen lokale media en vereist geen betaalde AI-API-sleutel."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Verificatie van de live dienst", "title": "Beschikbaarheid van YouTube-ondertitels en -video's", "body": "Bij de laatste live controle vroeg YouTube om aanmelding / botverificatie. Succesvolle online downloads zijn op dit moment niet aangetoond. Controleer dit vóór publieke uitgave op het beoogde netwerk en met representatieve video's."},
+    {"priority": "P1", "category": "Platformbeperking", "title": "Insluiten en video's met accountbeperkingen", "body": "Sommige makers of video's staan ingesloten afspelen niet toe. Google SSO in de app is niet geïmplementeerd; de browsersnelkoppeling gebruikt een aparte aanmeld- en afspeelsessie. Deze beperkingen mogen niet als opgelost worden gepresenteerd."},
+    {"priority": "P1", "category": "Distributie en compatibiliteit", "title": "Ondertekening en bredere Mac-tests", "body": "Het pakket is ad-hoc ondertekend, zonder Developer ID-notarisatie. Apple Silicon op macOS 26.5.2 is getest; macOS 27 en Intel-Macs niet. macOS 14 is een implementatiedoel, geen bewijs dat elke versie is getest."},
+    {"priority": "P2", "category": "Formaat- en kwaliteitsbeperkingen", "title": "Downloadkwaliteit en nauwkeurigheid van ondertitels", "body": "Opslaan gebruikt één volledige audio-/videostream en voegt geen aparte streams met hoge resolutie samen. Lokaal afspelen hangt af van codec-ondersteuning; optionele conversie met FFmpeg kan extra audiosporen, HDR en ingesloten ondertitels weglaten. ASS/SSA importeert alleen tekst. Automatische ondertitels, vertalingen en tweetalige koppeling op basis van tijd kunnen fouten bevatten."},
+    {"priority": "P2", "category": "Niet geïmplementeerd", "title": "Leergeschiedenis en studiehulpmiddelen", "body": "Herstel van de afspeelgeschiedenis, woordenverzamelingen, gespreide herhaling, OCR en extractie van ondertitels uit afbeeldingen zijn niet geïmplementeerd. Opgeslagen taalvoorkeuren zijn geen opgeslagen leervoortgang."},
+    {"priority": "P2", "category": "Redactionele controle", "title": "Taalcontrole door moedertaalsprekers", "body": "Alle 24 interfacetalen en vertaalde slogans hebben de wisseltests doorstaan. Dat toont dekking en gedrag aan, geen professionele controle van elke vertaling door moedertaalsprekers."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Welkom en hoofdroute", "caption": "De vier werkbalkacties, twee zichtbare ondertitelkeuzes, vertaalde slogan en duidelijke uitgeschakelde toestand voordat een video wordt geopend."},
+    {"id": "languages", "title": "Eerste en tweede ondertitel", "caption": "Echte opname van de Engelse interface met de onafhankelijke ondertitelmenu's, standaard ingesteld op Engels en Traditioneel Chinees."},
+    {"id": "youtube", "title": "Open een YouTube-link", "caption": "Echte opname van het linkvenster in de Engelse interface. Een link openen start het afspelen en vraagt het geselecteerde ondertitelpaar op."}
+  ],
+  "evidenceSummary": "Voor 0.5.3: 105 kerncontroles, 138 modelasserties, 29 ondertitelcontroles, 60 controles voor video-opslag en 317 asserties voor de native interface geslaagd. Alle 24 talen zijn in het echte menu geselecteerd; zes interfacetalen en compacte Duitse indelingen zijn beoordeeld.",
+  "evidenceLimit": "Lokaal afspelen, exports, toestandsovergangen en native opslagdialoogvensters zijn gecontroleerd. Offline testgegevens en opslagtests met een gesimuleerd hulpprogramma bewijzen niet dat YouTube momenteel online ondertitel- of videodownloads toestaat. Er zijn geen gebruikersgegevens voor aanmelding geïmporteerd."
+}

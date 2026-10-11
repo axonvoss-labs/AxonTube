@@ -1,0 +1,379 @@
+[
+  {
+    "name": "altgraph",
+    "version": "0.17.5",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/7e/f8/97fdf103f38fed6792a1601dbc16cc8aac56e7459a9fff08c812d8ae177a/altgraph-0.17.5.tar.gz",
+      "hash": "sha256:c87b395dd12fabde9c99573a9749d67da8d29ef9de0125c7f536699b4a9bc9e7",
+      "size": 48428,
+      "upload-time": "2025-11-21T20:35:50.583Z"
+    },
+    "local_file": "altgraph-0.17.5.tar.gz",
+    "verified_sha256": "c87b395dd12fabde9c99573a9749d67da8d29ef9de0125c7f536699b4a9bc9e7",
+    "verified_bytes": 48428
+  },
+  {
+    "name": "brotli",
+    "version": "1.2.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/f7/16/c92ca344d646e71a43b8bb353f0a6490d7f6e06210f8554c8f874e454285/brotli-1.2.0.tar.gz",
+      "hash": "sha256:e310f77e41941c13340a95976fe66a8a95b01e783d430eeaf7a2f87e0a57dd0a",
+      "size": 7388632,
+      "upload-time": "2025-11-05T18:39:42.86Z"
+    },
+    "local_file": "brotli-1.2.0.tar.gz",
+    "verified_sha256": "e310f77e41941c13340a95976fe66a8a95b01e783d430eeaf7a2f87e0a57dd0a",
+    "verified_bytes": 7388632
+  },
+  {
+    "name": "brotlicffi",
+    "version": "1.2.0.1",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/8a/b6/017dc5f852ed9b8735af77774509271acbf1de02d238377667145fcee01d/brotlicffi-1.2.0.1.tar.gz",
+      "hash": "sha256:c20d5c596278307ad06414a6d95a892377ea274a5c6b790c2548c009385d621c",
+      "size": 478156,
+      "upload-time": "2026-03-05T19:54:11.547Z"
+    },
+    "local_file": "brotlicffi-1.2.0.1.tar.gz",
+    "verified_sha256": "c20d5c596278307ad06414a6d95a892377ea274a5c6b790c2548c009385d621c",
+    "verified_bytes": 478156
+  },
+  {
+    "name": "certifi",
+    "version": "2026.5.20",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/f3/ce/ee2ecad540810a79593028e88299baeae54d346cc7a0d94b6199988b89b1/certifi-2026.5.20.tar.gz",
+      "hash": "sha256:69dea482ab64caa7b9f6aba1c6bf48bb6a5448d1c0f1b17ab42ad8c763a5344d",
+      "size": 135422,
+      "upload-time": "2026-05-20T11:46:50.073Z"
+    },
+    "local_file": "certifi-2026.5.20.tar.gz",
+    "verified_sha256": "69dea482ab64caa7b9f6aba1c6bf48bb6a5448d1c0f1b17ab42ad8c763a5344d",
+    "verified_bytes": 135422
+  },
+  {
+    "name": "cffi",
+    "version": "2.0.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/eb/56/b1ba7935a17738ae8453301356628e8147c79dbb825bcbc73dc7401f9846/cffi-2.0.0.tar.gz",
+      "hash": "sha256:44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529",
+      "size": 523588,
+      "upload-time": "2025-09-08T23:24:04.541Z"
+    },
+    "local_file": "cffi-2.0.0.tar.gz",
+    "verified_sha256": "44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529",
+    "verified_bytes": 523588
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.4.7",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz",
+      "hash": "sha256:ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5",
+      "size": 144271,
+      "upload-time": "2026-04-02T09:28:39.342Z"
+    },
+    "local_file": "charset_normalizer-3.4.7.tar.gz",
+    "verified_sha256": "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5",
+    "verified_bytes": 144271
+  },
+  {
+    "name": "curl-cffi",
+    "version": "0.15.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/48/5b/89fcfebd3e5e85134147ac99e9f2b2271165fd4d71984fc65da5f17819b7/curl_cffi-0.15.0.tar.gz",
+      "hash": "sha256:ea0c67652bf6893d34ee0f82c944f37e488f6147e9421bef1771cc6545b02ded",
+      "size": 196437,
+      "upload-time": "2026-04-03T11:12:31.525Z"
+    },
+    "local_file": "curl_cffi-0.15.0.tar.gz",
+    "verified_sha256": "ea0c67652bf6893d34ee0f82c944f37e488f6147e9421bef1771cc6545b02ded",
+    "verified_bytes": 196437
+  },
+  {
+    "name": "delocate",
+    "version": "0.13.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/2d/21/f1679803b2582632e7b9fdd83e675d5fc661513433c0f661938414978bc7/delocate-0.13.0.tar.gz",
+      "hash": "sha256:a93e67a9f56ee01a3f7096a042231d4ac37fecac873cd5ea34ea2b4f43a8fa13",
+      "size": 240774,
+      "upload-time": "2025-01-30T06:43:43.632Z"
+    },
+    "local_file": "delocate-0.13.0.tar.gz",
+    "verified_sha256": "a93e67a9f56ee01a3f7096a042231d4ac37fecac873cd5ea34ea2b4f43a8fa13",
+    "verified_bytes": 240774
+  },
+  {
+    "name": "idna",
+    "version": "3.17",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/b9/28/99c51f664567218d824af024c0251650fb27e4ca066df188dab0769c5b91/idna-3.17.tar.gz",
+      "hash": "sha256:5eb0cb53bc467c12eadcf6de83163ad8527cec9416f44b9b61b19caedad2b87f",
+      "size": 196048,
+      "upload-time": "2026-05-28T14:32:38.55Z"
+    },
+    "local_file": "idna-3.17.tar.gz",
+    "verified_sha256": "5eb0cb53bc467c12eadcf6de83163ad8527cec9416f44b9b61b19caedad2b87f",
+    "verified_bytes": 196048
+  },
+  {
+    "name": "macholib",
+    "version": "1.16.4",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/10/2f/97589876ea967487978071c9042518d28b958d87b17dceb7cdc1d881f963/macholib-1.16.4.tar.gz",
+      "hash": "sha256:f408c93ab2e995cd2c46e34fe328b130404be143469e41bc366c807448979362",
+      "size": 59427,
+      "upload-time": "2025-11-22T08:28:38.373Z"
+    },
+    "local_file": "macholib-1.16.4.tar.gz",
+    "verified_sha256": "f408c93ab2e995cd2c46e34fe328b130404be143469e41bc366c807448979362",
+    "verified_bytes": 59427
+  },
+  {
+    "name": "markdown-it-py",
+    "version": "4.2.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz",
+      "hash": "sha256:04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49",
+      "size": 82454,
+      "upload-time": "2026-05-07T12:08:28.36Z"
+    },
+    "local_file": "markdown_it_py-4.2.0.tar.gz",
+    "verified_sha256": "04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49",
+    "verified_bytes": 82454
+  },
+  {
+    "name": "mdurl",
+    "version": "0.1.2",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz",
+      "hash": "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba",
+      "size": 8729,
+      "upload-time": "2022-08-14T12:40:10.846Z"
+    },
+    "local_file": "mdurl-0.1.2.tar.gz",
+    "verified_sha256": "bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba",
+    "verified_bytes": 8729
+  },
+  {
+    "name": "mutagen",
+    "version": "1.47.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/81/e6/64bc71b74eef4b68e61eb921dcf72dabd9e4ec4af1e11891bbd312ccbb77/mutagen-1.47.0.tar.gz",
+      "hash": "sha256:719fadef0a978c31b4cf3c956261b3c58b6948b32023078a2117b1de09f0fc99",
+      "size": 1274186,
+      "upload-time": "2023-09-03T16:33:33.411Z"
+    },
+    "local_file": "mutagen-1.47.0.tar.gz",
+    "verified_sha256": "719fadef0a978c31b4cf3c956261b3c58b6948b32023078a2117b1de09f0fc99",
+    "verified_bytes": 1274186
+  },
+  {
+    "name": "packaging",
+    "version": "26.2",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/d7/f1/e7a6dd94a8d4a5626c03e4e99c87f241ba9e350cd9e6d75123f992427270/packaging-26.2.tar.gz",
+      "hash": "sha256:ff452ff5a3e828ce110190feff1178bb1f2ea2281fa2075aadb987c2fb221661",
+      "size": 228134,
+      "upload-time": "2026-04-24T20:15:23.917Z"
+    },
+    "local_file": "packaging-26.2.tar.gz",
+    "verified_sha256": "ff452ff5a3e828ce110190feff1178bb1f2ea2281fa2075aadb987c2fb221661",
+    "verified_bytes": 228134
+  },
+  {
+    "name": "pefile",
+    "version": "2024.8.26",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/03/4f/2750f7f6f025a1507cd3b7218691671eecfd0bbebebe8b39aa0fe1d360b8/pefile-2024.8.26.tar.gz",
+      "hash": "sha256:3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632",
+      "size": 76008,
+      "upload-time": "2024-08-26T20:58:38.155Z"
+    },
+    "local_file": "pefile-2024.8.26.tar.gz",
+    "verified_sha256": "3ff6c5d8b43e8c37bb6e6dd5085658d658a7a0bdcd20b6a07b1fcfc1c4e9d632",
+    "verified_bytes": 76008
+  },
+  {
+    "name": "pip",
+    "version": "26.1.2",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/01/91/47e7d486260f618783899587af63ccf7980fb60245c3e63dd4571c6b57ad/pip-26.1.2.tar.gz",
+      "hash": "sha256:f49cd134c61cf2fd75e0ce2676db03e4054504a5a4986d00f8299ae632dc4605",
+      "size": 1840799,
+      "upload-time": "2026-05-31T17:33:58.56Z"
+    },
+    "local_file": "pip-26.1.2.tar.gz",
+    "verified_sha256": "f49cd134c61cf2fd75e0ce2676db03e4054504a5a4986d00f8299ae632dc4605",
+    "verified_bytes": 1840799
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6/pycparser-3.0.tar.gz",
+      "hash": "sha256:600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29",
+      "size": 103492,
+      "upload-time": "2026-01-21T14:26:51.89Z"
+    },
+    "local_file": "pycparser-3.0.tar.gz",
+    "verified_sha256": "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29",
+    "verified_bytes": 103492
+  },
+  {
+    "name": "pycryptodomex",
+    "version": "3.23.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/c9/85/e24bf90972a30b0fcd16c73009add1d7d7cd9140c2498a68252028899e41/pycryptodomex-3.23.0.tar.gz",
+      "hash": "sha256:71909758f010c82bc99b0abf4ea12012c98962fbf0583c2164f8b84533c2e4da",
+      "size": 4922157,
+      "upload-time": "2025-05-17T17:23:41.434Z"
+    },
+    "local_file": "pycryptodomex-3.23.0.tar.gz",
+    "verified_sha256": "71909758f010c82bc99b0abf4ea12012c98962fbf0583c2164f8b84533c2e4da",
+    "verified_bytes": 4922157
+  },
+  {
+    "name": "pygments",
+    "version": "2.20.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/c3/b2/bc9c9196916376152d655522fdcebac55e66de6603a76a02bca1b6414f6c/pygments-2.20.0.tar.gz",
+      "hash": "sha256:6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f",
+      "size": 4955991,
+      "upload-time": "2026-03-29T13:29:33.898Z"
+    },
+    "local_file": "pygments-2.20.0.tar.gz",
+    "verified_sha256": "6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f",
+    "verified_bytes": 4955991
+  },
+  {
+    "name": "pyinstaller",
+    "version": "6.20.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/46/60/d03d52e6690d4e9caf333dcd14550cde634ce6c118b3bc8fa3112c3186fd/pyinstaller-6.20.0.tar.gz",
+      "hash": "sha256:95c5c7e03d5d61e9dfb8ef259c699cf492bb1041beb6dbe83696608cec07347a",
+      "size": 4048728,
+      "upload-time": "2026-04-22T20:59:36.96Z"
+    },
+    "local_file": "pyinstaller-6.20.0.tar.gz",
+    "verified_sha256": "95c5c7e03d5d61e9dfb8ef259c699cf492bb1041beb6dbe83696608cec07347a",
+    "verified_bytes": 4048728
+  },
+  {
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.5",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/1a/67/f4452d68793fb15beba4f19ef39a38a8822f0da7452b503c400d5a21f5c1/pyinstaller_hooks_contrib-2026.5.tar.gz",
+      "hash": "sha256:f066dfca8f7c45ff6336c9cf9fe25b4e48bfeb322a1aa24faaedfb8a8d1b0b08",
+      "size": 173689,
+      "upload-time": "2026-05-04T22:36:55.124Z"
+    },
+    "local_file": "pyinstaller_hooks_contrib-2026.5.tar.gz",
+    "verified_sha256": "f066dfca8f7c45ff6336c9cf9fe25b4e48bfeb322a1aa24faaedfb8a8d1b0b08",
+    "verified_bytes": 173689
+  },
+  {
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/85/9f/01a1a99704853cb63f253eea009390c88e7131c67e66a0a02099a8c917cb/pywin32-ctypes-0.2.3.tar.gz",
+      "hash": "sha256:d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755",
+      "size": 29471,
+      "upload-time": "2024-08-14T10:15:34.626Z"
+    },
+    "local_file": "pywin32-ctypes-0.2.3.tar.gz",
+    "verified_sha256": "d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755",
+    "verified_bytes": 29471
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/ac/c3/e2a2b89f2d3e2179abd6d00ebd70bff6273f37fb3e0cc209f48b39d00cbf/requests-2.34.2.tar.gz",
+      "hash": "sha256:f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed",
+      "size": 142856,
+      "upload-time": "2026-05-14T19:25:27.735Z"
+    },
+    "local_file": "requests-2.34.2.tar.gz",
+    "verified_sha256": "f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed",
+    "verified_bytes": 142856
+  },
+  {
+    "name": "rich",
+    "version": "15.0.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/c0/8f/0722ca900cc807c13a6a0c696dacf35430f72e0ec571c4275d2371fca3e9/rich-15.0.0.tar.gz",
+      "hash": "sha256:edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36",
+      "size": 230680,
+      "upload-time": "2026-04-12T08:24:00.75Z"
+    },
+    "local_file": "rich-15.0.0.tar.gz",
+    "verified_sha256": "edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36",
+    "verified_bytes": 230680
+  },
+  {
+    "name": "setuptools",
+    "version": "82.0.1",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/4f/db/cfac1baf10650ab4d1c111714410d2fbb77ac5a616db26775db562c8fab2/setuptools-82.0.1.tar.gz",
+      "hash": "sha256:7d872682c5d01cfde07da7bccc7b65469d3dca203318515ada1de5eda35efbf9",
+      "size": 1152316,
+      "upload-time": "2026-03-09T12:47:17.221Z"
+    },
+    "local_file": "setuptools-82.0.1.tar.gz",
+    "verified_sha256": "7d872682c5d01cfde07da7bccc7b65469d3dca203318515ada1de5eda35efbf9",
+    "verified_bytes": 1152316
+  },
+  {
+    "name": "typing-extensions",
+    "version": "4.15.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac84269196e94cf00f187f7ed21c242792a923cdb1c61f/typing_extensions-4.15.0.tar.gz",
+      "hash": "sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466",
+      "size": 109391,
+      "upload-time": "2025-08-25T13:49:26.313Z"
+    },
+    "local_file": "typing_extensions-4.15.0.tar.gz",
+    "verified_sha256": "0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466",
+    "verified_bytes": 109391
+  },
+  {
+    "name": "urllib3",
+    "version": "2.7.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/53/0c/06f8b233b8fd13b9e5ee11424ef85419ba0d8ba0b3138bf360be2ff56953/urllib3-2.7.0.tar.gz",
+      "hash": "sha256:231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c",
+      "size": 433602,
+      "upload-time": "2026-05-07T16:13:18.596Z"
+    },
+    "local_file": "urllib3-2.7.0.tar.gz",
+    "verified_sha256": "231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c",
+    "verified_bytes": 433602
+  },
+  {
+    "name": "websockets",
+    "version": "16.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/04/24/4b2031d72e840ce4c1ccb255f693b15c334757fc50023e4db9537080b8c4/websockets-16.0.tar.gz",
+      "hash": "sha256:5f6261a5e56e8d5c42a4497b364ea24d94d9563e8fbd44e78ac40879c60179b5",
+      "size": 179346,
+      "upload-time": "2026-01-10T09:23:47.181Z"
+    },
+    "local_file": "websockets-16.0.tar.gz",
+    "verified_sha256": "5f6261a5e56e8d5c42a4497b364ea24d94d9563e8fbd44e78ac40879c60179b5",
+    "verified_bytes": 179346
+  },
+  {
+    "name": "yt-dlp-ejs",
+    "version": "0.8.0",
+    "sdist": {
+      "url": "https://files.pythonhosted.org/packages/d3/e6/cceb9530e8f4e5940f6f7822d90e9d94f1b85343329a16baaf47bbbb3de1/yt_dlp_ejs-0.8.0.tar.gz",
+      "hash": "sha256:d5fa1639f63b5c4af8d932495f60689d5370f1a095782c944f7f62a303eb104e",
+      "size": 96571,
+      "upload-time": "2026-03-17T22:49:19.299Z"
+    },
+    "local_file": "yt_dlp_ejs-0.8.0.tar.gz",
+    "verified_sha256": "d5fa1639f63b5c4af8d932495f60689d5370f1a095782c944f7f62a303eb104e",
+    "verified_bytes": 96571
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "lang": "fi",
+  "name": "Suomi",
+  "direction": "ltr",
+  "headline": "Opi maailman kieliä nopeammin tekoälyn avulla.",
+  "intro": "Tee YouTubesta oma kieliluokkasi. Opi suosikkivideoistasi YouTuben tekstitysten ja automaattisten käännösten avulla: lue kahta kieltä rinnakkain, toista jokainen lause ja säilytä sinulle tärkeä materiaali.",
+  "badge": "24 käyttöliittymäkieltä · Monikieliset tekstitykset",
+  "notice": "Versio 0.5.3 · Ennakkojulkaisu lähdekoodina · Käännä lähdekoodista",
+  "labels": {
+    "language": "Asiakirjan kieli",
+    "screenshots": "Näyttökuvat",
+    "workflow": "Aloittaminen",
+    "features": "Käytettävissä olevat toiminnot",
+    "highlights": "Miksi se on hyödyllinen",
+    "issues": "Avoimet asiat ja rajoitukset",
+    "evidence": "Mitä on varmistettu",
+    "readme": "Tekninen README",
+    "verification": "Yksityiskohtainen tarkistusraportti",
+    "markdown": "Lataa tämä opas Markdown-muodossa",
+    "preview": "Suurenna näyttökuva napsauttamalla",
+    "close": "Sulje",
+    "previous": "Edellinen näyttökuva",
+    "next": "Seuraava näyttökuva",
+    "priority": "Prioriteetti",
+    "category": "Tyyppi",
+    "issue": "Asia / seuraava vaihe",
+    "languageScope": "24 tarkoittaa käyttöliittymän kielivaihtoehtojen määrää. Tekstityskielet riippuvat valitun videon saatavilla olevista raidoista; kyse ei ole lupauksesta oppia 24 kieltä sujuvasti.",
+    "screenshotScope": "Näyttökuvat on otettu varsinaisesta 0.5.3-sovelluksesta. Näyttökuvan kieli ilmoitetaan erikseen tämän asiakirjan kielestä.",
+    "fallbackScreenshot": "Näyttökuva englanninkielisestä sovelluksesta",
+    "localizedScreenshot": "Näyttökuva sovelluksesta tällä kielellä",
+    "license": "Sovelluksen lisenssi on MIT; kolmansien osapuolten osat säilyttävät omat lisenssi-ilmoituksensa. AxonTube ei ole sidoksissa YouTubeen, Googleen tai Appleen.",
+    "updated": "Asiakirjan päivämäärä: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Avaa YouTube", "body": "Liitä videolinkki. Saatavilla olevia tekstityksiä pyydetään automaattisesti: ensimmäiseksi englanti ja toiseksi perinteinen kiina. Ensimmäinen haku voi kestää noin 1–2 minuuttia; saatavuutta ei taata."},
+    {"title": "2. Valitse ja harjoittele", "body": "Käytä kahta näkyvää tekstitysten pudotusvalikkoa. Napsauta lausetta siirtyäksesi siihen, toistaaksesi sen uudelleen tai käynnistääksesi lauseen jatkuvan toiston."},
+    {"title": "3. Tallenna tai vie", "body": "Tallenna video -toiminnolla valitaan kansio saatavilla olevalle medialle ja tekstityksille. Vie kaksikieliset tekstitykset luo ladatuista tekstityksistä Word-, TXT- tai SRT-tiedostoja."},
+    {"title": "4. Muokkaa itsellesi sopivaksi", "body": "Muuta käyttöliittymän kieltä, toistonopeutta, tekstityksen kokoa ja kummankin raidan aikasiirtymää. Sovellus muistaa käyttöliittymän ja tekstitysten kielivalinnat."}
+  ],
+  "features": [
+    {"title": "Kaksi riippumatonta tekstitysraitaa", "body": "Oletuksena englanti / perinteinen kiina; valitse nykyisen videon saatavilla olevista alkuperäistekstityksistä ja automaattisista käännöksistä. Onnistuneesti haettu ensimmäinen raita pysyy käytettävissä, jos toisen haku epäonnistuu."},
+    {"title": "Harjoittelua lause kerrallaan", "body": "Lausehaku, siirtyminen napsauttamalla, edellinen / seuraava, uudelleentoisto, jatkuva toisto, toistonopeus ja nykyisen lauseen seuraaminen."},
+    {"title": "Video ja synkronoidut tekstitykset", "body": "Tallennus on käytettävissä myös tekstitysten latautuessa. Jokainen toiminto luo uuden kansion saatavilla olevalle videolle. Kun tekstityksiä on saatavilla, mukaan lisätään ajastetut SRT-raidat ja kaksikieliset lukutiedostot. Myös pelkän videon tallennus on tuettu; keskeneräinen työ säilyy .partial-kansiossa."},
+    {"title": "Vienti Word-, TXT- ja SRT-muotoon", "body": "Vie saatavilla olevat tekstitykset aikasiirtymät huomioiden. Word ja TXT yhdistävät tekstit ajallisen päällekkäisyyden perusteella. Jos vain yksi raita on ladattu, sen sisällön voi silti viedä."},
+    {"title": "24 käännettyä käyttöliittymää", "body": "Valikot, tilaviestit ja oppimiseen kannustava iskulause vaihtavat kieltä yhdessä. Arabia ja heprea tukevat asettelua oikealta vasemmalle; käyttöliittymän kielen vaihto ei muuta tekstitysten sisältöä."},
+    {"title": "Paikallinen toisto ja selkeät säätimet", "body": "Avaa paikalliset media- ja tekstitystiedostot Tiedosto-valikosta. Käytöstä poistetut toiminnot näkyvät himmennettyinä syineen; valitut tilat korostetaan ja merkitään valintamerkein; tallennuksen aikana näytetään varattu tila."}
+  ],
+  "highlights": [
+    {"title": "Lyhyt matka katselusta harjoitteluun", "body": "Työkalupalkin neljä toimintoa pitävät työnkulun suorana: YouTube → Tallenna video → Tekstitykset → Kieli. Erillistä tekstitysten hakupainiketta ei tarvita."},
+    {"title": "Oppimateriaali, jonka voit säilyttää", "body": "Ajastetut tekstitykset ja luettavat Word- / TXT-tiedostot tukevat sekä kuunteluharjoittelua että myöhempää kertausta. Viennit käyttävät uusia kohteita ja säilyttävät alkuperäiset tiedostot."},
+    {"title": "Paikallista käyttöä ilman tekoälyrajapinnan avainta", "body": "Paikallinen media ja tallennetut tekstitykset toimivat ilman verkkoa. YouTube toimittaa sivuston tekstitykset ja automaattiset käännökset; sovelluksessa ei ole telemetriaa, se ei lähetä paikallista mediaa eikä vaadi maksullista tekoälyrajapinnan avainta."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Verkkopalvelun toiminnan varmistus", "title": "YouTube-tekstitysten ja -videoiden saatavuus", "body": "Viimeisin verkkotarkistus pysähtyi YouTuben kirjautumis- / bottitarkistusvaatimukseen. Verkkolatausten onnistumista tällä hetkellä ei ole varmistettu. Tarkista toiminta aiotussa verkossa ja edustavalla videojoukolla ennen julkista julkaisua."},
+    {"priority": "P1", "category": "Alustan rajoitus", "title": "Upotus ja tilirajoitetut videot", "body": "Jotkin tekijät tai videot eivät salli upotettua toistoa. Sovelluksen sisäistä Google SSO:ta ei ole toteutettu; selaimen pikavalinta käyttää erillistä kirjautumis- ja toistoistuntoa. Näitä rajoituksia ei voi esittää ratkaistuina."},
+    {"priority": "P1", "category": "Jakelu ja yhteensopivuus", "title": "Allekirjoitus ja laajempi Mac-testaus", "body": "Paketti on allekirjoitettu ad hoc ilman Developer ID -notarisointia. Apple Silicon macOS 26.5.2:lla on testattu; macOS 27:ää ja Intel-Maceja ei ole. macOS 14 on käyttöönoton kohdeversio, ei todiste kaikkien versioiden testaamisesta."},
+    {"priority": "P2", "category": "Muoto- ja laaturajoitukset", "title": "Latauslaatu ja tekstitysten tarkkuus", "body": "Tallennus käyttää yhtä kokonaista ääni-/videovirtaa eikä yhdistä erillisiä suuren tarkkuuden virtoja. Paikallinen toisto riippuu koodekkituesta; valinnainen FFmpeg-muunnos voi jättää pois ylimääräiset ääniraidat, HDR:n ja upotetut tekstitykset. ASS/SSA-tuonti tuo vain tekstin. Automaattisissa tekstityksissä, käännöksissä ja aikaan perustuvassa kaksikielisessä yhdistämisessä voi olla virheitä."},
+    {"priority": "P2", "category": "Ei toteutettu", "title": "Oppimishistoria ja opiskelutyökalut", "body": "Toistohistorian palauttamista, sanastokokoelmia, hajautettua kertausta, OCR:ää ja kuvamuotoisten tekstitysten poimintaa ei ole toteutettu. Tallennetut kieliasetukset eivät tarkoita tallennettua oppimisen edistymistä."},
+    {"priority": "P2", "category": "Kielentarkistus", "title": "Äidinkielisten puhujien tekemä tarkistus", "body": "Kaikki 24 käyttöliittymäkieltä ja käännetyt iskulauseet läpäisivät vaihtotestit. Tämä osoittaa kattavuuden ja toiminnan, ei jokaisen käännöksen ammattimaista äidinkielistä tarkistusta."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Tervetuloa ja päätyönkulku", "caption": "Työkalupalkin neljä toimintoa, kaksi näkyvää tekstitysvalitsinta, käännetty iskulause ja selkeä käytöstä poistettu tila ennen videon avaamista."},
+    {"id": "languages", "title": "Ensimmäinen ja toinen tekstitys", "caption": "Todellinen näyttökuva englanninkielisen käyttöliittymän riippumattomista tekstitysvalikoista, joiden oletukset ovat englanti ja perinteinen kiina."},
+    {"id": "youtube", "title": "Avaa YouTube-linkki", "caption": "Todellinen näyttökuva englanninkielisen käyttöliittymän linkkivalintaikkunasta. Linkin avaaminen käynnistää toiston ja pyytää valitun tekstitysparin."}
+  ],
+  "evidenceSummary": "Versiossa 0.5.3 läpäistiin 105 ydintarkistusta, 138 mallin väittämää, 29 tekstitystarkistusta, 60 videon tallennuksen tarkistusta ja 317 natiivin käyttöliittymän väittämää. Kaikki 24 kielivaihtoehtoa valittiin varsinaisesta valikosta; kuusi käyttöliittymäkieltä ja saksan tiiviit asettelut tarkistettiin.",
+  "evidenceLimit": "Paikallinen toisto, viennit, tilasiirtymät ja järjestelmän tallennusvalintaikkunat varmistettiin. Verkon ulkopuoliset testiaineistot ja simuloidulla apuohjelmalla tehdyt tallennustestit eivät todista, että YouTube sallii tällä hetkellä tekstitysten tai videoiden lataamisen verkosta. Käyttäjien kirjautumistietoja ei tuotu."
+}

@@ -1,0 +1,68 @@
+{
+  "lang": "da",
+  "name": "Dansk",
+  "direction": "ltr",
+  "headline": "Lær verdens sprog hurtigere med AI.",
+  "intro": "Gør YouTube til dit eget sprogklasseværelse. Lær med videoer, du elsker, ved hjælp af YouTubes undertekster og automatiske oversættelser: læs to sprog side om side, afspil hver sætning igen, og gem det materiale, der betyder noget for dig.",
+  "badge": "24 brugerfladesprog · Flersprogede undertekster",
+  "notice": "Version 0.5.3 · Forhåndsversion som kildekode · Byg fra kildekode",
+  "labels": {
+    "language": "Dokumentsprog",
+    "screenshots": "Skærmbilleder",
+    "workflow": "Kom godt i gang",
+    "features": "Tilgængelige funktioner",
+    "highlights": "Derfor er den nyttig",
+    "issues": "Åbne problemer og begrænsninger",
+    "evidence": "Hvad der er verificeret",
+    "readme": "Teknisk README",
+    "verification": "Detaljeret verifikationsrapport",
+    "markdown": "Download denne vejledning som Markdown",
+    "preview": "Klik på et skærmbillede for at forstørre det",
+    "close": "Luk",
+    "previous": "Forrige skærmbillede",
+    "next": "Næste skærmbillede",
+    "priority": "Prioritet",
+    "category": "Type",
+    "issue": "Problem / næste skridt",
+    "languageScope": "24 er antallet af brugerfladesprog. Undertekstsprog afhænger af den valgte videos tilgængelige spor; det er ikke et løfte om at beherske 24 sprog flydende.",
+    "screenshotScope": "Skærmbillederne er taget i den faktiske app 0.5.3. Skærmbilledets sprog er angivet særskilt fra dette dokuments sprog.",
+    "fallbackScreenshot": "Skærmbillede af appen på engelsk",
+    "localizedScreenshot": "Skærmbillede af appen på dette sprog",
+    "license": "Appen har MIT-licens; tredjepartskomponenter bevarer deres licensmeddelelser. AxonTube er ikke tilknyttet YouTube, Google eller Apple.",
+    "updated": "Dokumentdato: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Åbn YouTube", "body": "Indsæt et videolink. Tilgængelige undertekster anmodes automatisk med engelsk først og traditionelt kinesisk som det andet sprog. Første hentning kan tage cirka 1–2 minutter; tilgængeligheden er ikke garanteret."},
+    {"title": "2. Vælg, og øv dig", "body": "Brug de to synlige rullemenuer til undertekster. Klik på en sætning for at springe til den, afspille den igen eller gentage den i en løkke."},
+    {"title": "3. Gem eller eksportér", "body": "Gem video lader dig vælge en mappe til tilgængelige medier og undertekster. Eksportér tosprogede undertekster opretter Word-, TXT- eller SRT-filer ud fra indlæste undertekster."},
+    {"title": "4. Tilpas til dig", "body": "Skift brugerfladesprog, afspilningshastighed, undertekststørrelse og tidsforskydning for hvert spor. Appen husker valgene af brugerflade- og undertekstsprog."}
+  ],
+  "features": [
+    {"title": "To uafhængige undertekstspor", "body": "Engelsk / traditionelt kinesisk som standard; vælg mellem den aktuelle videos tilgængelige originaler og automatiske oversættelser. Undertekster, der er hentet til første spor, kan stadig bruges, hvis andet spor fejler."},
+    {"title": "Øvelse sætning for sætning", "body": "Sætningssøgning, spring med et klik, forrige / næste, gentagelse, løkker, afspilningshastighed og følg den aktuelle sætning."},
+    {"title": "Video med synkroniserede undertekster", "body": "Du kan gemme, mens undertekster indlæses. Hver handling opretter en ny mappe med tilgængelig video. Når undertekster er tilgængelige, tilføjes SRT-spor med tidskoder og tosprogede læsefiler. Det er også muligt at gemme kun videoen; uafsluttet arbejde forbliver i en .partial-mappe."},
+    {"title": "Eksport til Word, TXT og SRT", "body": "Eksportér tilgængelige undertekster med tidsforskydningerne anvendt. Word og TXT parrer tekst efter overlappende tidsrum. Hvis kun ét spor er indlæst, kan dets indhold stadig eksporteres."},
+    {"title": "24 oversatte brugerflader", "body": "Menuer, statusmeddelelser og læringssloganet skifter sprog sammen. Arabisk og hebraisk understøtter layout fra højre mod venstre; underteksternes indhold ændres ikke, når brugerfladesproget skiftes."},
+    {"title": "Lokal afspilning og tydelig betjening", "body": "Åbn lokale medie- og undertekstfiler fra menuen Arkiv. Deaktiverede handlinger er nedtonet med en begrundelse; valgte tilstande har fremhævninger og flueben; en optagetindikator vises, mens der gemmes."}
+  ],
+  "highlights": [
+    {"title": "Kort vej fra at se til at øve", "body": "Fire handlinger på værktøjslinjen gør hovedforløbet enkelt: YouTube → Gem video → Undertekster → Sprog. Der er ikke brug for en ekstra knap til at hente undertekster."},
+    {"title": "Læringsmateriale, du kan beholde", "body": "Undertekster med tidskoder og læsbare Word- / TXT-filer hjælper både med lytteøvelser og senere repetition. Eksport bruger nye destinationer og bevarer originalfilerne."},
+    {"title": "Lokalt arbejde uden AI-API-nøgle", "body": "Lokale medier og gemte undertekster fungerer offline. YouTube leverer webstedets undertekster og automatiske oversættelser; appen har ingen telemetri, uploader ikke lokale medier og kræver ingen betalt AI-API-nøgle."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Verifikation af onlinetjenesten", "title": "Tilgængelighed af YouTube-undertekster og -videoer", "body": "Den seneste livekontrol stødte på YouTubes krav om login / botkontrol. Vellykkede aktuelle onlinedownloads er ikke bekræftet. Kontrollér på det tilsigtede netværk og med repræsentative videoer før offentlig udgivelse."},
+    {"priority": "P1", "category": "Platformsbegrænsning", "title": "Indlejring og videoer med kontobegrænsninger", "body": "Nogle ophavspersoner eller videoer tillader ikke indlejret afspilning. Google SSO i appen er ikke implementeret; browsergenvejen bruger en separat login- og afspilningssession. Disse begrænsninger kan ikke fremstilles som løst."},
+    {"priority": "P1", "category": "Distribution og kompatibilitet", "title": "Signering og bredere Mac-test", "body": "Pakken er ad hoc-signeret uden Developer ID-notarisering. Apple Silicon med macOS 26.5.2 er testet; macOS 27 og Intel-Mac-computere er ikke. macOS 14 er et implementeringsmål, ikke bevis for, at alle versioner er testet."},
+    {"priority": "P2", "category": "Format- og kvalitetsbegrænsninger", "title": "Downloadkvalitet og underteksternes nøjagtighed", "body": "Lagring bruger en komplet lyd-/videostrøm og sammenfletter ikke separate strømme i høj opløsning. Lokal afspilning afhænger af codec-understøttelsen; valgfri konvertering med FFmpeg kan udelade ekstra lydspor, HDR og indlejrede undertekster. ASS/SSA importerer kun tekst. Automatiske undertekster, oversættelser og tidsbaseret tosproget parring kan indeholde fejl."},
+    {"priority": "P2", "category": "Ikke implementeret", "title": "Læringshistorik og studieværktøjer", "body": "Gendannelse af afspilningshistorik, ordsamlinger, repetition med mellemrum, OCR og udtræk af billedbaserede undertekster er ikke implementeret. Gemte sprogpræferencer er ikke gemte læringsfremskridt."},
+    {"priority": "P2", "category": "Sproglig gennemgang", "title": "Gennemgang af modersmålstalere", "body": "Alle 24 brugerfladesprog og oversatte slogans bestod skiftetestene. Det bekræfter dækning og adfærd, men ikke en professionel gennemgang af hver oversættelse ved en modersmålstaler."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Velkomst og hovedforløb", "caption": "De fire handlinger på værktøjslinjen, to synlige undertekstvælgere, oversat slogan og tydelig deaktiveret tilstand, før en video åbnes."},
+    {"id": "languages", "title": "Første og anden undertekst", "caption": "Faktisk skærmbillede af den engelske brugerflades uafhængige undertekstmenuer med engelsk og traditionelt kinesisk som standard."},
+    {"id": "youtube", "title": "Åbn et YouTube-link", "caption": "Faktisk skærmbillede af linkdialogen i den engelske brugerflade. Når et link åbnes, starter afspilningen, og det valgte undertekstpar anmodes."}
+  ],
+  "evidenceSummary": "For 0.5.3 bestod: 105 kernekontroller, 138 modelassertioner, 29 undertekstkontroller, 60 kontroller af videolagring og 317 assertioner for den native brugerflade. Alle 24 sprogvalg blev foretaget i den faktiske menu; seks brugerfladesprog og kompakte tyske layout blev gennemgået.",
+  "evidenceLimit": "Lokal afspilning, eksport, tilstandsskift og systemets gemmedialoger blev verificeret. Offlinetestdata og gemmetest med et simuleret hjælpeprogram beviser ikke, at YouTube i øjeblikket tillader download af undertekster eller videoer fra nettet. Ingen brugerloginoplysninger blev importeret."
+}

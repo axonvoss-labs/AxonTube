@@ -1,0 +1,68 @@
+{
+  "lang": "en",
+  "name": "English",
+  "direction": "ltr",
+  "headline": "Learn the World's Languages Faster with AI.",
+  "intro": "Turn YouTube into your personal language classroom. Use YouTube captions and automatic translations to learn from videos you love: read two languages side by side, replay each sentence, and keep the material that matters.",
+  "badge": "24 interface languages · Multilingual subtitles",
+  "notice": "Version 0.5.3 · Source preview · Build from source",
+  "labels": {
+    "language": "Document language",
+    "screenshots": "Screenshots",
+    "workflow": "Getting started",
+    "features": "Available features",
+    "highlights": "Why it is useful",
+    "issues": "Open issues and limits",
+    "evidence": "What has been verified",
+    "readme": "Technical README",
+    "verification": "Detailed verification record",
+    "markdown": "Download this guide as Markdown",
+    "preview": "Click a screenshot to enlarge",
+    "close": "Close",
+    "previous": "Previous screenshot",
+    "next": "Next screenshot",
+    "priority": "Priority",
+    "category": "Type",
+    "issue": "Issue / next step",
+    "languageScope": "24 counts interface choices. Subtitle languages depend on the selected video's available tracks; it is not a promise of fluency in 24 languages.",
+    "screenshotScope": "Screenshots are captured from the actual 0.5.3 application. The screenshot's language is labeled separately from this document's language.",
+    "fallbackScreenshot": "English application screenshot",
+    "localizedScreenshot": "Application screenshot in this language",
+    "license": "MIT application license; third-party components retain their notices. AxonTube is not affiliated with YouTube, Google, or Apple.",
+    "updated": "Document date: 2026-10-11"
+  },
+  "steps": [
+    {"title": "1. Open YouTube", "body": "Paste a video link. Available captions are requested automatically, with English first and Traditional Chinese second. Initial retrieval may take about 1–2 minutes; availability is not guaranteed."},
+    {"title": "2. Choose and practise", "body": "Use the two visible subtitle dropdowns. Click a sentence to jump to it, replay it, or enable a sentence loop."},
+    {"title": "3. Save or export", "body": "Save Video chooses a folder for accessible media and available subtitles. Export Bilingual Subtitles creates Word, TXT, or SRT from loaded captions."},
+    {"title": "4. Make it yours", "body": "Change interface language, playback speed, subtitle size, and each track's timing offset. The app remembers interface and subtitle-language choices."}
+  ],
+  "features": [
+    {"title": "Two independent subtitle tracks", "body": "English / Traditional Chinese defaults; choose from the current video's available originals and automatic translations. Successful first-track captions remain usable if the second track fails."},
+    {"title": "Sentence-focused practice", "body": "Sentence search, click-to-seek, previous / next, replay, looping, playback speed, and following the current sentence."},
+    {"title": "Video with synchronized subtitles", "body": "Saving stays available while captions load. Each operation creates a new folder for accessible video; timed SRT tracks and bilingual reading files are added when captions are available. Video-only saving is supported. Incomplete work stays in a .partial folder."},
+    {"title": "Word, TXT, and SRT export", "body": "Export available subtitles with timing offsets applied. Word and TXT pair text by time overlap. If only one track is loaded, its content can still be exported."},
+    {"title": "24 localized interfaces", "body": "Menus, status messages, and the learning slogan switch languages together. Arabic and Hebrew support right-to-left layouts; subtitle content is not changed by switching the interface."},
+    {"title": "Local playback and clear controls", "body": "Open local media and subtitle files from the File menu. Disabled actions are dimmed with reasons; selected modes have highlights and checkmarks; saving shows a busy state."}
+  ],
+  "highlights": [
+    {"title": "A short path from watching to practising", "body": "Four toolbar actions keep the main flow direct: YouTube → Save Video → Subtitles → Language. No extra caption-fetch button is needed."},
+    {"title": "Learning material you can keep", "body": "Timed captions and readable Word / TXT files support both listening practice and later review. Exports use new destinations and preserve original files."},
+    {"title": "Local work, no AI API key", "body": "Local media and saved subtitles work offline. YouTube supplies website captions and automatic translations; the app has no telemetry and does not upload local media or require a paid AI API key."}
+  ],
+  "issues": [
+    {"priority": "P0", "category": "Live-service verification", "title": "YouTube caption and video availability", "body": "The latest live check hit YouTube's sign-in / bot-verification requirement. Successful current online downloads have not been established. Validate under the intended network and across representative videos before public release."},
+    {"priority": "P1", "category": "Platform restriction", "title": "Embedding and account-restricted videos", "body": "Some authors or videos disallow embedded playback. In-app Google SSO is not implemented; the browser shortcut uses a separate login and playback session. These restrictions cannot be presented as solved."},
+    {"priority": "P1", "category": "Distribution and compatibility", "title": "Signing and broader Mac testing", "body": "The package is ad-hoc signed, without Developer ID notarization. Apple Silicon on macOS 26.5.2 was tested; macOS 27 and Intel Macs were not. macOS 14 is a deployment target, not proof that every version has been tested."},
+    {"priority": "P2", "category": "Format and quality limits", "title": "Download quality and subtitle fidelity", "body": "Saving uses a complete audio/video stream and does not merge separate high-resolution streams. ASS/SSA imports text only. Automatic captions, translations, and timing-based bilingual pairing may contain errors. Local playback depends on codec support; optional FFmpeg conversion may omit extra audio tracks, HDR, and embedded subtitles."},
+    {"priority": "P2", "category": "Not implemented", "title": "Learning-history and study tools", "body": "Playback-history restoration, vocabulary collections, spaced review, OCR, and image-subtitle extraction are not implemented. Saved language preferences are not saved learning progress."},
+    {"priority": "P2", "category": "Editorial review", "title": "Native-speaker language review", "body": "All 24 interface choices and localized slogans passed switching checks. That establishes coverage and behavior, not professional native-speaker review of every translation."}
+  ],
+  "gallery": [
+    {"id": "home", "title": "Welcome and main workflow", "caption": "The four toolbar actions, two visible subtitle selectors, localized slogan, and clear disabled state before a video is opened."},
+    {"id": "languages", "title": "First and second subtitle", "caption": "Actual English-interface capture of the independent subtitle dropdowns, defaulting to English and Traditional Chinese."},
+    {"id": "youtube", "title": "Open a YouTube link", "caption": "Actual English-interface capture of the link dialog. Opening a link starts playback and requests the selected caption pair."}
+  ],
+  "evidenceSummary": "For 0.5.3: 105 core checks, 138 model assertions, 29 caption checks, 60 video-save checks, and 317 native-interface assertions passed. All 24 language choices were selected in the actual menu; six interface languages and compact German layouts were reviewed.",
+  "evidenceLimit": "Local playback, exports, state transitions, and native save dialogs were verified. Offline fixtures and fake-helper save tests do not prove that YouTube currently permits online caption or video downloads. No user credentials were imported."
+}
