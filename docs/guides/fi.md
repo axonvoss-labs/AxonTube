@@ -8,7 +8,7 @@
 
 Versio 0.5.3 · macOS-ennakkoversio · Apple silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Tee YouTubesta oma kieliluokkasi. Opi suosikkivideoistasi YouTuben tekstitysten ja automaattisten käännösten avulla: lue kahta kieltä rinnakkain, toista jokainen lause ja säilytä sinulle tärkeä materiaali.
 

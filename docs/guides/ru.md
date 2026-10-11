@@ -8,7 +8,7 @@
 
 Версия 0.5.3 · Предварительная версия для macOS · Apple silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Превратите YouTube в свой личный языковой класс. Учитесь по любимым видео с субтитрами и автоматическими переводами YouTube: читайте тексты на двух языках рядом, переслушивайте каждое предложение и сохраняйте важные для вас материалы.
 

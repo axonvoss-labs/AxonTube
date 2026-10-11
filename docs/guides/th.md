@@ -8,7 +8,7 @@
 
 เวอร์ชัน 0.5.3 · รุ่นตัวอย่างสำหรับ macOS · Apple silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 เปลี่ยน YouTube ให้เป็นห้องเรียนภาษาส่วนตัวของคุณ ใช้คำบรรยายและคำแปลอัตโนมัติจาก YouTube เพื่อเรียนรู้ผ่านวิดีโอที่คุณชอบ อ่านสองภาษาเทียบกัน เล่นซ้ำทีละประโยค และเก็บเนื้อหาที่สำคัญกับคุณไว้
 

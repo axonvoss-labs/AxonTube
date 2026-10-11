@@ -8,7 +8,7 @@
 
 Wersja 0.5.3 · Wersja testowa dla macOS · Apple silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Zamień YouTube w swoją osobistą klasę językową. Korzystaj z napisów i automatycznych tłumaczeń YouTube, by uczyć się z ulubionych filmów: czytaj dwa języki obok siebie, odtwarzaj każde zdanie ponownie i zachowuj najważniejsze materiały.
 

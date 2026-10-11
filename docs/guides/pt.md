@@ -8,7 +8,7 @@
 
 Versão 0.5.3 · Prévia para macOS · Apple silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Transforme o YouTube na sua própria sala de aula de idiomas. Use as legendas e traduções automáticas do YouTube para aprender com os vídeos que você adora: leia dois idiomas lado a lado, repita cada frase e guarde o material que importa.
 

@@ -7,6 +7,12 @@
 <p align="center"><strong>Turn YouTube into Your Personal Language Classroom.</strong></p>
 
 <p align="center">
+  <a href="https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3"><strong>Release v0.5.3</strong></a> ·
+  <a href="https://github.com/users/axonvoss-labs/packages/container/package/axontube"><strong>GitHub Packages</strong></a> ·
+  <a href="docs/INSTALL.md">Install on Mac</a>
+</p>
+
+<p align="center">
   <img src="docs/assets/badges/swift.svg" alt="Language: Swift" width="112" height="20">
   <img src="docs/assets/badges/macos.svg" alt="Platform: macOS" width="104" height="20">
   <img src="docs/assets/badges/interface-languages.svg" alt="24 interface languages" width="153" height="20">
@@ -35,6 +41,8 @@ Use YouTube captions and automatic translations to learn from videos you love: r
 **[Download DMG](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.dmg)** · [Download ZIP](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.zip) · [SHA-256 checksums](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/SHA256SUMS.txt) · [Release notes](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3)
 
 Requires an Apple silicon Mac; macOS 14 is the deployment target. This preview is ad-hoc signed and is not notarized by Apple. Read the [installation instructions](docs/INSTALL.md) before opening it. Source builds remain available below.
+
+The same release files are also distributed through [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) as an OCI artifact. Mac users can use the DMG or ZIP above; the registry package is for artifact distribution, not a runnable Linux container. See [package details and retrieval](docs/PACKAGES.md).
 
 ![AxonTube bilingual playback and sentence practice](docs/assets/interface-study.png)
 

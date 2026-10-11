@@ -8,7 +8,7 @@
 
 버전 0.5.3 · macOS 프리뷰 · Apple Silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 YouTube를 나만의 어학 교실로 바꿔 보세요. YouTube 자막과 자동 번역으로 좋아하는 동영상에서 배우세요. 두 언어를 나란히 읽고, 각 문장을 반복 재생하고, 중요한 학습 자료를 간직할 수 있습니다.
 

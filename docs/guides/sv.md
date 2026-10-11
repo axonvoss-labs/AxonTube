@@ -8,7 +8,7 @@
 
 Version 0.5.3 · Förhandsversion för macOS · Apple Silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Gör YouTube till ditt eget språkklassrum. Lär dig med videor du gillar genom YouTubes undertexter och automatiska översättningar: läs två språk sida vid sida, spela upp varje mening igen och spara materialet som betyder något för dig.
 

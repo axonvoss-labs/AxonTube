@@ -87,8 +87,11 @@ offline fixture tests.
 
 Create the release tag from the reviewed commit in the dedicated publication
 checkout and push only that tag to both remotes. Create a draft GitHub Release
-with the four verified assets, use a prerelease label for this preview, and
-expand relative links in the bilingual release notes before publishing them.
+with the four verified assets and expand relative links in the bilingual
+release notes before publishing them. Version 0.5.3 uses a regular GitHub
+Release marked Latest so that it appears in the repository sidebar; its title
+and notes explicitly identify it as a macOS preview. Keep the technical
+limitations visible regardless of GitHub's release classification.
 Do not reuse an existing tag or replace published assets during a routine
 update. After publication, download the public assets again, verify their
 checksums, and compare both remote tag targets with the publication commit.
@@ -97,3 +100,14 @@ The preview is not Developer ID signed or notarized. A successful build does
 not establish compatibility with untested Macs or resolve restrictions imposed
 by online services. Keep these limits visible in the release notes and
 [installation instructions](INSTALL.md).
+
+## GitHub Packages
+
+Release attachments and the Packages sidebar are separate publication channels.
+The [package workflow](../.github/workflows/publish-package.yml) publishes the
+same verified files to GHCR, links the package to this repository, and verifies
+the retrieved contents. It uses the workflow's short-lived `GITHUB_TOKEN` with
+`contents: read` and `packages: write`; never add personal tokens to source.
+See [package publication and retrieval](PACKAGES.md). After the first publish,
+set the new package's visibility to Public and verify an anonymous pull and the
+repository sidebar. Do not infer public visibility from a successful push.

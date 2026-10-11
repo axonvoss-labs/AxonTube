@@ -1,0 +1,286 @@
+name: Publish macOS download package
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Published release tag (vMAJOR.MINOR.PATCH)
+        required: true
+        default: v0.5.3
+        type: string
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: axontube-package-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'axonvoss-labs/AxonTube'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      RELEASE_TAG: ${{ inputs.release_tag || github.event.release.tag_name }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      # No checkout or third-party action is needed: transfer verified release
+      # downloads using an explicitly pinned official ORAS executable.
+      - name: Verify release, publish artifact, and verify downloaded package
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import base64
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import re
+          import subprocess
+          import tarfile
+          import tempfile
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+
+          REPOSITORY = "axonvoss-labs/AxonTube"
+          PACKAGE = "ghcr.io/axonvoss-labs/axontube"
+          PACKAGE_PAGE = "https://github.com/users/axonvoss-labs/packages/container/package/axontube"
+          ORAS_VERSION = "1.3.4"
+          ORAS_SHA256 = "f27adb935022d94df8dc77719c322dda592c78a0d57a6f7dcdd8d900b248c454"
+          ORAS_SIZE = 4679642
+          ARTIFACT_TYPE = "application/vnd.axontube.macos.release.v1"
+          tag = os.environ["RELEASE_TAG"]
+          if not re.fullmatch(r"v(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)", tag):
+              raise SystemExit("release_tag must have the form vMAJOR.MINOR.PATCH")
+          if os.environ["GITHUB_REPOSITORY"] != REPOSITORY:
+              raise SystemExit("This workflow may publish only the AxonTube repository")
+          version = tag[1:]
+          reference = PACKAGE + ":" + version
+          token = os.environ["GH_TOKEN"]
+          work = Path(tempfile.mkdtemp(prefix="axontube-package-", dir=os.environ["RUNNER_TEMP"]))
+          work.chmod(0o700)
+          assets_dir = work / "assets"
+          assets_dir.mkdir()
+
+          class NoAPIRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  raise urllib.error.HTTPError(req.full_url, code, "API redirects are not permitted", headers, fp)
+
+          api_client = urllib.request.build_opener(NoAPIRedirect)
+
+          def api(path, allow_missing=False):
+              request = urllib.request.Request("https://api.github.com" + path, headers={
+                  "Authorization": "Bearer " + token,
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "AxonTube-Package-Publisher",
+              })
+              try:
+                  with api_client.open(request, timeout=45) as response:
+                      return json.load(response)
+              except urllib.error.HTTPError as error:
+                  if allow_missing and error.code == 404:
+                      return None
+                  raise SystemExit("GitHub API request failed with HTTP " + str(error.code)) from None
+
+          def sha256(path):
+              value = hashlib.sha256()
+              with path.open("rb") as source:
+                  for block in iter(lambda: source.read(1024 * 1024), b""):
+                      value.update(block)
+              return value.hexdigest()
+
+          def download(url, path, size, expected_sha):
+              if not isinstance(size, int) or not 0 < size <= 1024 * 1024 * 1024:
+                  raise SystemExit("Unexpected download size")
+              if not re.fullmatch(r"[0-9a-f]{64}", expected_sha):
+                  raise SystemExit("Missing or invalid upstream SHA-256")
+              request = urllib.request.Request(url, headers={"User-Agent": "AxonTube-Package-Publisher"})
+              with urllib.request.urlopen(request, timeout=90) as response, path.open("xb") as output:
+                  final = urllib.parse.urlsplit(response.url)
+                  if final.scheme != "https" or not (final.hostname == "github.com"
+                          or (final.hostname or "").endswith(".githubusercontent.com")):
+                      raise SystemExit("Unexpected release download host")
+                  total = 0
+                  while True:
+                      block = response.read(1024 * 1024)
+                      if not block:
+                          break
+                      total += len(block)
+                      if total > size:
+                          raise SystemExit("Download exceeds its declared size")
+                      output.write(block)
+              if path.stat().st_size != size or sha256(path) != expected_sha:
+                  raise SystemExit("Download checksum mismatch: " + path.name)
+
+          release = api("/repos/" + REPOSITORY + "/releases/tags/" + tag)
+          release_url = "https://github.com/" + REPOSITORY + "/releases/tag/" + tag
+          if release.get("draft") or release.get("tag_name") != tag or release.get("html_url") != release_url:
+              raise SystemExit("Expected a published, non-draft release in the AxonTube repository")
+          if not release.get("published_at"):
+              raise SystemExit("Release has not been published")
+          expected_files = {
+              "AxonTube-" + version + "-macos-arm64.dmg": "application/x-apple-diskimage",
+              "AxonTube-" + version + "-macos-arm64.zip": "application/zip",
+              "AxonTube-" + version + "-dependency-materials.tar.gz": "application/gzip",
+              "SHA256SUMS.txt": "text/plain",
+          }
+          release_assets = release.get("assets", [])
+          by_name = {asset["name"]: asset for asset in release_assets}
+          if set(by_name) != set(expected_files) or len(release_assets) != len(expected_files):
+              raise SystemExit("Release must contain exactly the expected four package assets")
+
+          # Check GHCR itself, including private versions. GitHub's public-user
+          # Packages listing is not sufficient for a package awaiting publicity.
+          def require_missing_tag():
+              credentials = base64.b64encode((os.environ["GITHUB_ACTOR"] + ":" + token).encode()).decode()
+              query = urllib.parse.urlencode({"service": "ghcr.io",
+                  "scope": "repository:axonvoss-labs/axontube:pull,push"})
+              request = urllib.request.Request("https://ghcr.io/token?" + query, headers={
+                  "Authorization": "Basic " + credentials,
+                  "User-Agent": "AxonTube-Package-Publisher",
+              })
+              try:
+                  with api_client.open(request, timeout=45) as response:
+                      authorization = json.load(response)
+              except urllib.error.HTTPError as error:
+                  raise SystemExit("GHCR authorization check failed with HTTP " + str(error.code)) from None
+              registry_token = authorization.get("token") or authorization.get("access_token")
+              if not registry_token:
+                  raise SystemExit("GHCR did not return an authorization token")
+              request = urllib.request.Request("https://ghcr.io/v2/axonvoss-labs/axontube/manifests/" + version,
+                  headers={"Authorization": "Bearer " + registry_token,
+                           "Accept": "application/vnd.oci.image.manifest.v1+json, application/vnd.oci.image.index.v1+json, application/vnd.docker.distribution.manifest.v2+json, application/vnd.docker.distribution.manifest.list.v2+json"})
+              try:
+                  with api_client.open(request, timeout=45):
+                      raise SystemExit("Package tag already exists; refusing to overwrite " + reference)
+              except urllib.error.HTTPError as error:
+                  if error.code == 404:
+                      errors = json.loads(error.read(65536)).get("errors", [])
+                      if errors and all(item.get("code") in {"MANIFEST_UNKNOWN", "NAME_UNKNOWN"} for item in errors):
+                          return
+                  raise SystemExit("GHCR version check failed with HTTP " + str(error.code)) from None
+
+          require_missing_tag()
+
+          expected_hashes = {}
+          for name, asset in by_name.items():
+              url = "https://github.com/" + REPOSITORY + "/releases/download/" + tag + "/" + name
+              if asset.get("browser_download_url") != url:
+                  raise SystemExit("Unexpected release asset URL")
+              upstream_digest = asset.get("digest") or ""
+              if not upstream_digest.startswith("sha256:"):
+                  raise SystemExit("GitHub did not provide an asset SHA-256")
+              expected_hashes[name] = upstream_digest.removeprefix("sha256:")
+              download(url, assets_dir / name, asset["size"], expected_hashes[name])
+
+          checksums = {}
+          for line in (assets_dir / "SHA256SUMS.txt").read_text(encoding="utf-8").splitlines():
+              match = re.fullmatch(r"([0-9a-fA-F]{64}) [ *]([^/\\]+)", line)
+              if not match or match[2] in checksums:
+                  raise SystemExit("Unexpected SHA256SUMS.txt entry")
+              checksums[match[2]] = match[1].lower()
+          payload_names = set(expected_files) - {"SHA256SUMS.txt"}
+          if set(checksums) != payload_names or any(checksums[name] != expected_hashes[name] for name in payload_names):
+              raise SystemExit("Release checksums do not match the three payload assets")
+
+          # Resolve the release tag itself, not the workflow's possibly newer
+          # checkout revision. Annotated and lightweight tags are both accepted.
+          git_object = api("/repos/" + REPOSITORY + "/git/ref/tags/" + tag)["object"]
+          for _ in range(5):
+              if git_object.get("type") == "commit":
+                  break
+              if git_object.get("type") != "tag" or not re.fullmatch(r"[0-9a-f]{40}", git_object.get("sha", "")):
+                  raise SystemExit("Unexpected release Git object")
+              git_object = api("/repos/" + REPOSITORY + "/git/tags/" + git_object["sha"])["object"]
+          revision = git_object.get("sha", "")
+          if git_object.get("type") != "commit" or not re.fullmatch(r"[0-9a-f]{40}", revision):
+              raise SystemExit("Release tag does not resolve to a commit")
+
+          oras_archive = work / "oras.tar.gz"
+          download("https://github.com/oras-project/oras/releases/download/v" + ORAS_VERSION
+                   + "/oras_" + ORAS_VERSION + "_linux_amd64.tar.gz", oras_archive, ORAS_SIZE, ORAS_SHA256)
+          oras = work / "oras"
+          with tarfile.open(oras_archive, "r:gz") as archive:
+              member = archive.getmember("oras")
+              if not member.isfile():
+                  raise SystemExit("ORAS archive does not contain a regular executable")
+              with archive.extractfile(member) as source, oras.open("xb") as target:
+                  target.write(source.read())
+          oras.chmod(0o755)
+          registry_config = work / "registry-auth.json"
+
+          def oras_run(arguments, **kwargs):
+              return subprocess.run([str(oras), *arguments, "--registry-config", str(registry_config)],
+                                    check=True, **kwargs)
+
+          oras_run(["login", "ghcr.io", "--username", os.environ["GITHUB_ACTOR"], "--password-stdin"],
+                   input=token + "\n", text=True)
+          registry_config.chmod(0o600)
+          manifest_path = work / "published-manifest.json"
+          annotations = {
+              "org.opencontainers.image.source": "https://github.com/" + REPOSITORY,
+              "org.opencontainers.image.url": release_url,
+              "org.opencontainers.image.documentation": "https://github.com/" + REPOSITORY + "/blob/axontube/docs/PACKAGES.md",
+              "org.opencontainers.image.title": "AxonTube " + version + " macOS downloads",
+              "org.opencontainers.image.description": "macOS Apple silicon download artifact: DMG, ZIP, checksums and dependency materials; not a runnable Linux container.",
+              "org.opencontainers.image.version": version,
+              "org.opencontainers.image.revision": revision,
+              "org.opencontainers.image.created": release["published_at"],
+              "io.axontube.platform": "macos/arm64",
+          }
+          push_args = ["push", "--image-spec", "v1.1", "--artifact-type", ARTIFACT_TYPE,
+                       "--export-manifest", str(manifest_path)]
+          for name, value in annotations.items():
+              push_args.extend(["--annotation", name + "=" + value])
+          push_args.append(reference)
+          push_args.extend(name + ":" + media_type for name, media_type in expected_files.items())
+          require_missing_tag()
+          oras_run(push_args, cwd=assets_dir)
+
+          descriptor = json.loads(oras_run(["manifest", "fetch", "--descriptor", reference],
+                                          capture_output=True, text=True).stdout)
+          digest = "sha256:" + sha256(manifest_path)
+          if descriptor.get("digest") != digest:
+              raise SystemExit("Registry manifest digest differs from the uploaded manifest")
+          immutable_reference = PACKAGE + "@" + digest
+          remote_manifest = json.loads(oras_run(["manifest", "fetch", immutable_reference],
+                                               capture_output=True, text=True).stdout)
+          if remote_manifest.get("artifactType") != ARTIFACT_TYPE or remote_manifest.get("annotations") != annotations:
+              raise SystemExit("Published artifact type or annotations differ")
+          layers = remote_manifest.get("layers", [])
+          if len(layers) != len(expected_files):
+              raise SystemExit("Published artifact has an unexpected file count")
+          for layer in layers:
+              name = layer.get("annotations", {}).get("org.opencontainers.image.title")
+              if name not in expected_files or layer.get("mediaType") != expected_files[name]:
+                  raise SystemExit("Unexpected published file or media type")
+              if layer.get("digest") != "sha256:" + expected_hashes[name]:
+                  raise SystemExit("Published file digest differs from the release")
+          pulled = work / "verified-download"
+          oras_run(["pull", immutable_reference, "--output", str(pulled)])
+          if {path.name for path in pulled.iterdir()} != set(expected_files):
+              raise SystemExit("Downloaded package has an unexpected file set")
+          for name, expected in expected_hashes.items():
+              path = pulled / name
+              if not path.is_file() or path.is_symlink() or sha256(path) != expected:
+                  raise SystemExit("Downloaded package checksum mismatch: " + name)
+
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as summary:
+              summary.write("Published and pulled back all four verified release assets.\n\n")
+              summary.write("- Package: [AxonTube macOS downloads](" + PACKAGE_PAGE + ")\n")
+              summary.write("- Tag: `" + reference + "`\n")
+              summary.write("- Immutable reference: `" + immutable_reference + "`\n")
+              summary.write("- Source release: [" + tag + "](" + release_url + ")\n\n")
+              summary.write("This is a macOS download artifact, not a runnable Linux container.\n\n")
+              summary.write("On the first publication, change Package settings → Change visibility → Public. "
+                            "Repository permissions do not make a new package public automatically. "
+                            "Then verify an anonymous ORAS pull and the repository Packages sidebar.\n")
+          print("Verified published artifact " + immutable_reference)
+          PY

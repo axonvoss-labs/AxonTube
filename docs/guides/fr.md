@@ -8,7 +8,7 @@
 
 Version 0.5.3 · Préversion macOS · Puce Apple
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Faites de YouTube votre salle de classe pour apprendre les langues. Avec les sous-titres et les traductions automatiques de YouTube, apprenez à partir des vidéos que vous aimez : lisez deux langues côte à côte, réécoutez chaque phrase et conservez les supports qui comptent pour vous.
 

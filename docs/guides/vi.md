@@ -8,7 +8,7 @@
 
 Phiên bản 0.5.3 · Bản xem trước cho macOS · Apple silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 Biến YouTube thành lớp học ngôn ngữ của riêng bạn. Dùng phụ đề và bản dịch tự động của YouTube để học qua những video bạn yêu thích: đọc song song hai ngôn ngữ, phát lại từng câu và lưu giữ tài liệu hữu ích.
 

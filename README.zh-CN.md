@@ -7,6 +7,12 @@
 <p align="center"><strong>把 YouTube 变成你的私人语言课堂。</strong></p>
 
 <p align="center">
+  <a href="https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3"><strong>Release v0.5.3</strong></a> ·
+  <a href="https://github.com/users/axonvoss-labs/packages/container/package/axontube"><strong>GitHub Packages</strong></a> ·
+  <a href="docs/INSTALL.md">Mac 安装说明</a>
+</p>
+
+<p align="center">
   <img src="docs/assets/badges/swift.svg" alt="开发语言：Swift" width="112" height="20">
   <img src="docs/assets/badges/macos.svg" alt="运行平台：macOS" width="104" height="20">
   <img src="docs/assets/badges/interface-languages.svg" alt="24 种界面语言" width="153" height="20">
@@ -35,6 +41,8 @@
 **[下载 DMG 安装包](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.dmg)** · [下载 ZIP](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/AxonTube-0.5.3-macos-arm64.zip) · [SHA-256 校验码](https://github.com/axonvoss-labs/AxonTube/releases/download/v0.5.3/SHA256SUMS.txt) · [版本说明](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3)
 
 需要 Apple 芯片 Mac；最低部署目标为 macOS 14。此预览版采用临时签名，尚未经过 Apple 公证，首次打开前请阅读[安装说明](docs/INSTALL.md)。下方仍提供源码构建方法。
+
+同一套发布文件也通过 [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) 以 OCI 工件分发。Mac 用户直接使用上面的 DMG 或 ZIP 即可；注册表中的包用于分发文件，并不是可运行的 Linux 容器。详见[包说明与获取方法](docs/PACKAGES.md)。
 
 ![AxonTube 双语播放与逐句练习](docs/assets/interface-study.png)
 

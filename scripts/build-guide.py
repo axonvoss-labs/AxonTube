@@ -54,7 +54,7 @@ def main():
             else '[' + edition['name'] + '](' + code + '.md)'
             for code, edition in copy.items()
         )
-        lines = ['# AxonTube', '', navigation, '', '[README · English](../../README.md) · [README · 简体中文](../../README.zh-CN.md)', '', '**' + data['headline'] + '**', '', data['notice'], '', '[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)', '', data['intro'], '', '**' + data['badge'] + '**', '', label['languageScope'], '', '## ' + label['screenshots'], '', label['screenshotScope'], '']
+        lines = ['# AxonTube', '', navigation, '', '[README · English](../../README.md) · [README · 简体中文](../../README.zh-CN.md)', '', '**' + data['headline'] + '**', '', data['notice'], '', '[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)', '', data['intro'], '', '**' + data['badge'] + '**', '', label['languageScope'], '', '## ' + label['screenshots'], '', label['screenshotScope'], '']
         for item in data['gallery']:
             if item['id'] == 'home':
                 path = 'interface-' + SCREENSHOTS.get(lang, 'en') + '.png'

@@ -8,7 +8,7 @@
 
 Sürüm 0.5.3 · macOS önizlemesi · Apple Silicon
 
-[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md)
+[macOS DMG · ZIP · SHA-256](https://github.com/axonvoss-labs/AxonTube/releases/tag/v0.5.3) · [Install / 安装](../INSTALL.md) · [GitHub Packages](https://github.com/users/axonvoss-labs/packages/container/package/axontube) · [Package guide](../PACKAGES.md)
 
 YouTube'u kendi dil sınıfınıza dönüştürün. YouTube altyazıları ve otomatik çevirileriyle sevdiğiniz videolardan öğrenin: iki dili yan yana okuyun, her cümleyi tekrar oynatın ve sizin için önemli materyalleri saklayın.
 
